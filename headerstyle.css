@@ -1,13 +1,15 @@
 header {
     position: fixed;
     z-index: 999;
+    width: 100%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 2%;
+    padding-top: 1%;
 }
 
 #mainHeader {
     display: flex;
+    height: 100%;
 }
 
 #mainHeader #mainHeaderLogo {
@@ -26,7 +28,7 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 /* Change the color of links on hover */
