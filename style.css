@@ -19,28 +19,6 @@ body {
   padding: 20px;
 }
 
-/* Header */
-header {
-  background-color: #333;
-  padding: 10px 0;
-}
-
-nav ul {
-  list-style: none;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-}
-
 /* Hero section */
 #hero {
   text-align: center;
@@ -99,4 +77,3 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
-.feature h3 {
