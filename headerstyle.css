@@ -39,32 +39,17 @@ header {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    margin: 10px 10px;
+    padding: 4px 6px;
     text-decoration: none;
     font-size: 20px;
+    border-radius: 20%;
     transition: all 0.3s ease-in-out;
 }
 
-.headernav:hover{
-    font-weight: bold;
-}
-  
-.headernav:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-  
-.headernav:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.headernav a:hover{
+    background-color: #ffffff2f;
+    border-radius: 30%;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
