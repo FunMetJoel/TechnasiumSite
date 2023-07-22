@@ -1,3 +1,19 @@
+:root {
+  --ichthusBlauw: #006b85;
+  --ichthusOranje: #ef7911;
+  --ichthusZwart: #171717;
+
+  /* Deze komen van ichthuslyceum.nl */
+  --global-palette4: #4f4f4f;
+  --global-palette5: #4f4f4f;
+  --global-palette6: #e5e5e5;
+  --global-palette7: #ffe386;
+  --global-palette8: #deedf8;
+  --global-palette9: #ffffff;
+  --global-palette9rgb: 255, 255, 255;
+}
+
+
 /* Reset default styles */
 * {
   margin: 0;

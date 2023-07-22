@@ -23,25 +23,48 @@ header {
     height: 100%;
 }
 
+#HeaderTechnasiumLogo {
+    height: 50%;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+}
+
 .headernav {
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .headernav a {
-    float: left;
-    display: block;
+    /* float: left; */
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Change the color of links on hover */
-.headernav a:hover {
-    text-decoration: underline;
-    color: #d1d1d1;
+.headernav:hover{
+    font-weight: bold;
+}
+  
+.headernav:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.headernav:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -49,7 +72,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 700px) {
      .headernav a/*:not(:first-child)*/ {
         display: none;
     } 
@@ -60,7 +83,7 @@ header {
     }
 }
 
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 700px) {
     .headernav.responsive {
         position: relative;
     }
