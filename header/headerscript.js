@@ -10,7 +10,7 @@ function myFunction() {
 
 // Function to load and insert the header dynamically
 function insertHeader() {
-    fetch('header.html')
+    fetch('header/header.html')
       .then(response => response.text())
       .then(headerHTML => {
         // Select the placeholder element in the current page
@@ -21,7 +21,7 @@ function insertHeader() {
 
         // Highlight the current page link in the header (adjust 'href' value accordingly)
         const currentPage = window.location.pathname.split('/').pop(); // Extract current page filename
-        const headerLinks = document.querySelectorAll('header a');
+        const headerLinks = document.querySelectorAll('header/header a');
 
         headerLinks.forEach(link => {
           const linkHref = link.getAttribute('href').split('/').pop(); // Extract link filename
@@ -37,3 +37,19 @@ function insertHeader() {
 
   // Call the function to insert the header when the page is loaded
   window.addEventListener('DOMContentLoaded', insertHeader);
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    var x = document.getElementById("header");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      if (!x.classList.contains("scrolled")) {
+        x.classList.add("scrolled");
+      }
+    }else
+    {
+      if (x.classList.contains("scrolled")) {
+        x.classList.remove("scrolled");
+      }
+    }
+  }

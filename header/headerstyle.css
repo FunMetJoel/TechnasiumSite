@@ -2,10 +2,16 @@ header {
     position: fixed;
     z-index: 999;
     width: 100%;
-    height: 100px;
+    height: 80px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
+    padding-bottom: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background-color:#deedf8;
 }
 
 #mainHeader {
@@ -16,13 +22,24 @@ header {
 
 .mainHeaderLogo {
     /* flex-grow: 1; */
-    height: 100%;
+    padding-left: 2%;
     overflow: hidden;
 }
 
 .mainHeaderLogo img {
-    height: 100%;
+    height: 80%;
 }
+
+.scrolled div div a .nScroll{
+    display: none;
+}
+.Scroll{
+    display: none;
+}
+.scrolled div div a .Scroll{
+    display:inline;
+}
+
 
 #HeaderTechnasiumLogo {
     height: 50%;

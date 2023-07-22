@@ -77,16 +77,23 @@ main{
 
 .FrontImage .btn {
   display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  
+  padding: 10px 10px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
 }
 
 .FrontImage .btn:hover {
-  background-color: #555;
+  opacity: 1;
+}
+
+.FrontImage .btn img{
+  height: 8em;
+  transition: height 0.3s ease;
+}
+
+.FrontImage .btn:hover img{
+  height: 10em;
 }
 
 /* Features section */
