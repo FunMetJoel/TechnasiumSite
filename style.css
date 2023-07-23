@@ -13,7 +13,6 @@
   --global-palette9rgb: 255, 255, 255;
 }
 
-
 /* Reset default styles */
 * {
   margin: 0;
@@ -39,17 +38,11 @@ main{
   height: 100%;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 /* Hero section */
 .FrontImage {
   width: 100%;
   text-align: center;
-  padding-bottom: 250px;
+  /* padding-bottom: 250px; */
   color: #fff;
   background-image: url("https://cdn-kiosk-api.telegraaf.nl/ba6754c0-4768-11ea-8ad0-02d2fb1aa1d7.jpg");
   background-position: center;
@@ -59,8 +52,7 @@ main{
   background-blend-mode: multiply;
 }
 
-.FrontImage div {
-  height: 100px;
+.FrontImage .bluefadeOverlay {
   padding: 250px 0;
   background: linear-gradient(to top, #00000000 40%, var(--ichthusBlauw) 150%);
 }
@@ -93,7 +85,7 @@ main{
 }
 
 .FrontImage .btn:hover img{
-  height: 10em;
+  height: 9em;
 }
 
 /* Features section */
@@ -118,3 +110,19 @@ main{
   margin-bottom: 20px;
 }
 
+.custom-shape-divider-bottom-1690119695 {
+  width: 100%;
+  /* overflow: hidden; */
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1690119695 svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 95px;
+}
+
+.custom-shape-divider-bottom-1690119695 .shape-fill {
+  fill: #FFFFFF;
+}
