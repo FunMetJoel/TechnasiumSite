@@ -11,6 +11,9 @@
   --global-palette8: #deedf8;
   --global-palette9: #ffffff;
   --global-palette9rgb: 255, 255, 255;
+
+  --global-content-width: 1200px;
+  --global-content-edge-padding: 1.5rem;
 }
 
 /* Reset default styles */
@@ -39,7 +42,7 @@ main{
 }
 
 /* Hero section */
-.FrontImage {
+#FrontImage {
   width: 100%;
   text-align: center;
   /* padding-bottom: 250px; */
@@ -52,22 +55,22 @@ main{
   background-blend-mode: multiply;
 }
 
-.FrontImage .bluefadeOverlay {
+#FrontImage .bluefadeOverlay {
   padding: 15vh 0;
   background: linear-gradient(to top, #00000000 40%, var(--ichthusBlauw) 150%);
 }
 
-.FrontImage h1 {
+#FrontImage h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
 
-.FrontImage p {
+#FrontImage p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-.FrontImage .btn {
+#FrontImage .btn {
   display: inline-block;
   
   padding: 10px 10px;
@@ -75,17 +78,23 @@ main{
   transition: opacity 0.3s ease;
 }
 
-.FrontImage .btn:hover {
+#FrontImage .btn:hover {
   opacity: 1;
 }
 
-.FrontImage .btn img{
+#FrontImage .btn img{
   height: 8em;
   transition: height 0.3s ease;
 }
 
-.FrontImage .btn:hover img{
+#FrontImage .btn:hover img{
   height: 9em;
+}
+
+.content {
+  max-width: var(--global-content-width, 1200px);
+  padding: var(--global-content-edge-padding);
+  margin:auto;
 }
 
 /* Features section */
@@ -120,9 +129,10 @@ main{
 .custom-shape-divider-bottom-1690119695 svg {
   display: block;
   width: calc(100% + 1.3px);
-  height: 95px;
+  height: 10vw;
 }
 
 .custom-shape-divider-bottom-1690119695 .shape-fill {
-  fill: #FFFFFF;
+  fill: white;
 }
+

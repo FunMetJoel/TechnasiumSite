@@ -14,13 +14,15 @@ header.scrolled {
     display: flex;
     justify-content:space-between;
     width: 100%;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .mainHeaderLogo {
     /* flex-grow: 1; */
     padding-left: 2%;
     overflow: hidden;
-    height: 2rem;
+    height: 3rem;
 }
 
 .mainHeaderLogo img {
