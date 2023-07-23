@@ -76,7 +76,7 @@ header.scrolled {
     display: none;
 }
 
-@media screen and (max-width: 43.75px) {
+@media screen and (max-width: 43.75rem) {
      .headernav a/*:not(:first-child)*/ {
         display: none;
     } 
@@ -87,7 +87,7 @@ header.scrolled {
     }
 }
 
-@media screen and (max-width: 43.75px) {
+@media screen and (max-width: 43.75rem) {
     .headernav.responsive {
         position: relative;
     }
