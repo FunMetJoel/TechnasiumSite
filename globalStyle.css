@@ -60,20 +60,30 @@ main{
   background: linear-gradient(to top, #00000000 40%, var(--ichthusBlauw) 150%);
 }
 
+.content {
+  max-width: var(--global-content-width, 1200px);
+  padding: var(--global-content-edge-padding);
+  margin:auto;
+}
+
+
+
+
+/* TODO: vanaf hier Miss naar lokaal document? */
 #FrontImage h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
 }
 
 #FrontImage p {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
 }
 
 #FrontImage .btn {
   display: inline-block;
   
-  padding: 10px 10px;
+  padding: 0.625rem 0.625rem;
   opacity: 0.9;
   transition: opacity 0.3s ease;
 }
@@ -91,21 +101,15 @@ main{
   height: 9em;
 }
 
-.content {
-  max-width: var(--global-content-width, 1200px);
-  padding: var(--global-content-edge-padding);
-  margin:auto;
-}
-
 /* Features section */
 #features {
   background-color: #fff;
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 
 #features h2 {
   text-align: center;
-  font-size: 28px;
+  font-size: 1.75rem;
   margin-bottom: 40px;
 }
 
@@ -115,7 +119,7 @@ main{
 }
 
 .feature i {
-  font-size: 36px;
+  font-size: 2.25rem;
   margin-bottom: 20px;
 }
 
@@ -136,3 +140,6 @@ main{
   fill: white;
 }
 
+#MainProduct img{
+  float: right;
+}

@@ -10,18 +10,18 @@ function myFunction() {
 
 // Function to load and insert the header dynamically
 function insertHeader() {
-    fetch('header/header.html')
+    fetch('/header/header.html')
       .then(response => response.text())
       .then(headerHTML => {
         // Select the placeholder element in the current page
         const headerPlaceholder = document.getElementById('header-placeholder');
 
         // Insert the header HTML into the placeholder
-        headerPlaceholder.innerHTML = headerHTML;
+        headerPlaceholder.outerHTML = headerHTML;
 
         // Highlight the current page link in the header (adjust 'href' value accordingly)
         const currentPage = window.location.pathname.split('/').pop(); // Extract current page filename
-        const headerLinks = document.querySelectorAll('header/header a');
+        const headerLinks = document.querySelectorAll('/header/header a');
 
         headerLinks.forEach(link => {
           const linkHref = link.getAttribute('href').split('/').pop(); // Extract link filename
