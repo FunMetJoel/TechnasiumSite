@@ -6,7 +6,7 @@
 /* Features section */
 #features {
   background-color: var(--ichthusLichtblauw);
-  padding: 5rem 0;
+  padding: 10vw 0;
   position: relative;
 }
 
@@ -44,7 +44,7 @@
   padding: 0.5rem;
   flex-basis: calc(16.6% - 1rem);
   min-width: 8rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.3s ease-in-out;
 }
 
@@ -61,6 +61,10 @@
   object-fit:contain;
   border-radius:10%;
   background-color: white;
+}
+
+.gallery h5 {
+  padding-left: 0.5rem;
 }
 
 #FrontImage {
