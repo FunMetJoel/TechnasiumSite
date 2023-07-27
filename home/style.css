@@ -1,0 +1,65 @@
+#Machines {
+    background-color: white;
+}
+
+.custom-shape-divider-top-1690451280 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1690451280 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 51px;
+}
+
+.custom-shape-divider-top-1690451280 .shape-fill {
+    fill: white;
+}
+
+
+/* Features section */
+#features {
+    background-color: var(--ichthusLichtblauw);
+    padding: 5rem 0;
+    position: relative;
+    
+  }
+  
+  #features h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 40px;
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .feature i {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .custom-shape-divider-bottom-1690119695 {
+    width: 100%;
+    /* overflow: hidden; */
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1690119695 svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10vw;
+  }
+  
+  .custom-shape-divider-bottom-1690119695 .shape-fill {
+    fill: white;
+  }
