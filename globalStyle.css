@@ -81,7 +81,8 @@ body {
   background-color:white;
   list-style-type:none;
   padding: 0.5rem;
-  flex-basis: 11rem;
+  flex-basis: 16%;
+  min-width: 8rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
