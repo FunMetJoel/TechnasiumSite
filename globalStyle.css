@@ -23,31 +23,37 @@
   box-sizing: border-box;
 }
 
-
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;;
   background-color: #f8f8f8;
-  color: #333;
+  color: var(--ichthusZwart);
   line-height: 1.6;
 }
 
 /* Hero section */
 #FrontImage {
+  position: relative;
   width: 100%;
   text-align: center;
   /* padding-bottom: 250px; */
   color: #fff;
-  background-image: url("https://cdn-kiosk-api.telegraaf.nl/ba6754c0-4768-11ea-8ad0-02d2fb1aa1d7.jpg");
   background-position: center;
   background-size: cover;
   background-repeat:space;
-  background-color: #1f10025f;/*rgba(200,100,0,.5);*/
+  background-color: #1f10026e;/*rgba(200,100,0,.5);*/
   background-blend-mode: multiply;
   
 }
 
 .bluefadeOverlay {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 50%;
+
   background: linear-gradient(to top, #00000000 40%, var(--ichthusBlauw) 150%);
 }
 
@@ -70,80 +76,35 @@ body {
   filter: blur(0);
 }
 
-/* TODO: vanaf hier Miss naar lokaal document? */
-.gallery{
-  display: flex;
-  grid-gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.gallery li {
-  display: inline-block;
-  border-radius: 10%;
-  background-color:white;
-  list-style-type:none;
-  padding: 0.5rem;
-  flex-basis: calc(16.6% - 1rem);
-  min-width: 8rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.3s ease-in-out;
-}
 
-.gallery li:hover{
-  border-radius: 5%;
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-}
+/* --------------- */
+/* sectionDividers */
+/* --------------- */
 
-.gallery li img{
+.sectionDivider-bottom, .sectionDivider-top{
+  position: absolute;
   width: 100%;
-  aspect-ratio: 4/3;
   overflow: hidden;
-  object-fit:contain;
-  border-radius:10%;
-  background-color: white;
 }
 
-#FrontIMage {
-  position: relative;
+.sectionDivider-top {
+  top: 0;
+  left: 0;
 }
 
-#FrontImage .bluefadeOverlay {
-  padding: 15vh 0;
+.sectionDivider-bottom {
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.sectionDivider-bottom svg, .sectionDivider-top svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 10vw;
 }
 
 #FrontImage h1 {
-  font-size: 2.25rem;
-  margin-bottom: 1.25rem;
-}
-
-#FrontImage p {
-  font-size: 1.125rem;
-  margin-bottom: 1.875rem;
-}
-
-#FrontImage .btn {
-  display: inline-block;
-  
-  padding: 0.625rem 0.625rem;
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
-}
-
-#FrontImage .btn:hover {
-  opacity: 1;
-}
-
-#FrontImage .btn img{
-  height: 8em;
-  transition: height 0.3s ease;
-}
-
-#FrontImage .btn:hover img{
-  height: 9em;
-}
-
-
-#MainProduct img{
-  float: right;
+  font-size: 3rem;
+  font-weight: 500;
 }

@@ -1,0 +1,9 @@
+.sectionDivider-top .shape-fill, .sectionDivider-bottom .shape-fill{
+    fill: white;
+}
+
+#FrontImage {
+    padding: 25vh 0;
+    background-image: url("https://www.jutter.nl/wp-content/uploads/2020/01/Ichthus-technasium-1-Artis-opdracht-1.jpg");
+  }
+
