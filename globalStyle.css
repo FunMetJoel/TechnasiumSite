@@ -108,3 +108,41 @@ body {
   font-size: 3rem;
   font-weight: 500;
 }
+
+.gallery{
+  display: flex;
+  grid-gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.gallery a {
+  display: inline-block;
+  border-radius: 10%;
+  background-color:white;
+  list-style-type:none;
+  padding: 0.5rem;
+  flex-basis: calc(16.6% - 1rem);
+  min-width: 8rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery a:hover{
+  border-radius: 5%;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery a img{
+  width: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  object-fit:contain;
+  border-radius:10%;
+  background-color: white;
+}
+
+#headerBackground{
+  background-color: var(--ichthusBlauw);
+  height: 5rem;
+}
