@@ -1,0 +1,60 @@
+#title h1{
+    font-size: 2.2rem;
+}
+
+
+main {
+    background-color: white;
+}
+
+main .text {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+}
+
+@media screen and (max-width: 55rem){
+    main .text {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 3rem;
+        grid-row-gap: 2rem;
+    }
+
+    br.EmptySpace{
+        display: none;
+    }
+}
+
+.rightSide img {
+    width: 75%;
+}
+
+.rightSide {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    margin-bottom: auto;
+}
+
+.herkenImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    width: 100%;
+}
+
+.herkenImages img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+span.Important{
+    color:var(--ichthusBlauw);
+    font-weight: bold;
+}
+
+section{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
