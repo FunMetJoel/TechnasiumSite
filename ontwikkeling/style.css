@@ -22,6 +22,8 @@
 
 .gallery a img{
     aspect-ratio: 1/1;
+    border-style: inset;
+    border-color: rgb(220, 220, 220);
 }
 
 .gallery a {
@@ -31,8 +33,14 @@
     text-align: center;
     margin-top:0;
     text-decoration: none;
+    background-color: rgb(240, 240, 240);
 }
 
 .gallery a:not([href]) {
     background-color: gray;
+}
+
+.gallery a:not([href]) img{
+    background-color: lightgray;
+    border-color: rgb(108, 108, 108);
 }
