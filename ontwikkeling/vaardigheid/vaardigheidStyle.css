@@ -1,7 +1,7 @@
 #title h1{
-    font-size: 2.2rem;
+    font-size: 3rem;
+    line-height: 3rem;
 }
-
 
 main {
     background-color: white;
@@ -59,4 +59,32 @@ span.Important{
 section{
     margin-top:1rem;
     margin-bottom: 1rem;
+}
+
+.horizontal-line {
+    border-bottom: 2px solid var(--ichthusBlauw);
+    margin: 5px 0;
+}
+
+/* .ondertitel{
+    margin:0.2rem 0;
+    border-style: dashed;
+    border-color: #ffb514;
+    width:fit-content;
+    padding: 0 0.3rem;
+} */
+
+.categorie{
+    margin:0.2rem 0;
+    border-style: dashed;
+    width:max-content;
+    padding: 0 0.3rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin-top:0.5rem;
+    border-width: 0.2rem;
+}
+
+.categorie.electronica{
+    border-color: #ffb514;
 }

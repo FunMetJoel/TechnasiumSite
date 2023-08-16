@@ -5,7 +5,7 @@
   --ichthusZwart: #171717;
 
   /* Deze komen van ichthuslyceum.nl */
-  --global-palette4: #4f4f4f;
+  --tekstkleur: #4f4f4f;
   --global-palette5: #4f4f4f;
   --global-palette6: #e5e5e5;
   --global-palette7: #ffe386;
@@ -31,6 +31,10 @@ body {
   line-height: 1.6;
 }
 
+p{
+  color: var(--tekstkleur);
+}
+
 /* Hero section */
 #FrontImage {
   position: relative;
@@ -44,6 +48,9 @@ body {
   background-color: #1f10026e;/*rgba(200,100,0,.5);*/
   background-blend-mode: multiply;
   
+}
+#FrontImage p {
+  color: #fff;
 }
 
 .bluefadeOverlay {

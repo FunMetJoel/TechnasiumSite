@@ -63,12 +63,11 @@ header.scrolled {
 
 .scrolled a {
     color: #006b85;
-    ;
 }
 
 .headernav a:hover{
     background-color: #ffffff2f;
-    border-radius: 30%;
+    border-radius: 0.5rem;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
