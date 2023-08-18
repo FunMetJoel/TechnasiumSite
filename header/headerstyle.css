@@ -3,11 +3,12 @@ header {
     z-index: 999;
     width: 100%;
     padding: 1rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 header.scrolled {
     background-color:#deedf8;
+    box-shadow: 0 0 5px #00000080;
 }
 
 #mainHeader {

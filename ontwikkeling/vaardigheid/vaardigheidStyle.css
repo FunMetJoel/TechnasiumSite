@@ -3,8 +3,15 @@
     line-height: 3rem;
 }
 
-main {
-    background-color: white;
+#title {
+    background-color: var(--ichthusLichtblauw);
+    margin-top: 0;
+    padding: 1rem 0;
+}
+
+body {
+    min-height: 100vh;
+    background-attachment: fixed;
 }
 
 main .text {
@@ -27,6 +34,11 @@ main .text {
     }
 }
 
+h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .rightSide img {
     max-width: 75%;
 }
@@ -37,6 +49,7 @@ main .text {
     margin-bottom: auto;
     display: grid;
     place-items: center;
+    background-color: white;
 }
 
 .herkenImages {
@@ -74,6 +87,14 @@ section{
     padding: 0 0.3rem;
 } */
 
+#title #MetaData{
+    display: flex;
+}
+
+#title #MetaData > *{
+    margin-right: 0.5rem;
+}
+
 .categorie{
     margin:0.2rem 0;
     border-style: dashed;
@@ -87,4 +108,12 @@ section{
 
 .categorie.electronica{
     border-color: #ffb514;
+    background-color: #ffedc7;
+}
+
+#title #MetaData .Credits{
+    margin:0.2rem 0;
+    padding: 0 0.3rem;
+    font-weight: bold;
+    margin-top:0.7rem;
 }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/globalStyle.css">
+  <link rel="stylesheet" href="/ontwikkeling/vaardigheid/vaardigheidStyle.css">
+  <link rel="stylesheet" href="ConditionalHide.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <title>Technasium</title>
+  <script type="text/javascript" src="/header/headerscript.js"></script>
+  <script type="text/javascript" src="/footer/footerscript.js"></script>
+  <script type="text/javascript" src="ConditionalHide.js"></script>
+  <script defer type="text/javascript" src="/globalScript.js"></script>
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  
+  <div id="headerBackground"></div>
+
+  <section id="title"> 
+    <div class="content"> 
+     <h1>Schakelingen bouwen</h1> 
+     <p class="categorie electronica">&#9889; Electronica</p> 
+     <div class="horizontal-line"></div>
+     <br>
+     <p> 
+        INLEIDING
+     </p>
+     <br>
+     <p> 
+      Het doel van deze vaardigheid is kennis op te doen over maken en toepassen van elektrische
+schakelingen. Je leert dit met behulp van een zogenoemd breadboard, een batterij en elektrische
+componenten.
+    </p>
+    </div> 
+  </section> 
+
+  <main id="MAIN" class="breadboardACTIVE">
+    <label>
+      <input type="radio" name="methodSelect" value="radioBreadboard" checked="checked"> Breadboard
+    </label>
+    <label>
+      <input type="radio" name="methodSelect" value="radioOpHout"> Op hout
+    </label>
+    <label>
+      <input type="radio" name="methodSelect" value="radioTroughHole"> troughHole
+    </label>
+    <label>
+      <input type="radio" name="methodSelect" value="radioPcb"> PCB
+    </label>
+    
+    <section id="bouwplaats">
+      <div class="content breadboard">
+        <h2>Schakelingen bouwen met <span class="Important">breadboard</span></h2>
+        <div class="text">
+          <p>
+            Een breadboard bestaat uit rijen gaatjes waarin je elektronische componenten kunt plaatsen. Deze punten zijn verbonden binnen elke rij, wat betekent dat als je een component in een gaatje steekt, het automatisch verbonden is met anderen in dezelfde rij. De meeste breadboards hebben aan de lange zijde twee power rails en in het midden veel korte verbindingstukken van 5 pins<br>
+          </p>
+
+          <div class="rightSide">
+            <p>Zo ziet een breadboard eruit</p>
+            <img src="https://static.javatpoint.com/blog/images/breadboard3.png">
+          </div>
+
+          <p>
+             Power rails aan de zijkanten zijn voor positieve en negatieve voeding, en je kunt componenten zoals weerstanden en LED's in de gaatjes plaatsen. Lange componenten hebben meerdere pinnen die op verschillende rijen kunnen worden aangesloten.<br><br> Jumperdraden met pinnetjes aan beide uiteinden verbinden componenten in verschillende rijen. Dit maakt het mogelijk om schakelingen te bouwen zonder te solderen. <br><br>Breadboards zijn handig voor snelle proefopstellingen en experimenteren, en je kunt componenten herpositioneren of draden verplaatsen als je niet tevreden bent met de schakeling.
+          </p>
+        </div>
+      </div>
+
+      <div class="content opHout">
+        <h2>Schakelingen bouwen met <span class="Important">spijkers</span></h2>
+        <div class="text">
+          <p>
+            Als een schakeling niet te ingewikkeld is, kan deze makkelijk gemaakt worden door de verschillende componenten direct aan elkaar te solderen. Om toch wat structuur in de schakeling te houden kun de componenten vastsolderen aan spijkers die aan bijvoorbeeld een plank zijn vastgemaakt.
+          </p>
+          <br>
+          <p>
+            Een groot voordeel hiervan is dat je de schakeling direct op het schakelschema kan maken. Print het schakelschema uit. Sla spijkers op alle hoek- en kruispunten en soldeer de componenten aan de spijkers zoals op het schema is aangegeven.
+          </p>
+          <br>
+          <p>
+            Een nadeel van op deze manier solderen is dat het lastig kan zijn om een foute verbinding weer los te krijgen.
+          </p>
+        </div>
+      </div>
+      <div class="content troughHole">
+        <h2>Schakelingen bouwen met <span class="Important">troughHole</span></h2>
+        <div class="text">
+          <p>troughHole is een handige techniek tussen breadboard en PCB in. Platen met troughole gaten zijn redelijk makkelijk te verkrijgen en het zorgt voor een makkelijke en overzichtelijke schakeling</p>
+          <br>
+          <p>Het handige aan troughHole is dat je een redelijk ingewikkelde schakeling makkelijk om een klein oppervlak kan maken.</p>
+          <br>
+          <p>Sommige troughHole platen zijn dubbelzijdig, zo kun je schakelingen bouwen waarbij je onder de componenten doorkan en dubbel zoveel kwijt kant op hetzelfde oppervlak. Dit is handig om bijvoorbeeld kruispunten over elkaar heen te laten gaan zonder dat je jumpers moet gebruiken die onnodig uit de schakeling springen.</p>
+        </div>
+      </div>
+      <div class="content pcb">
+        <h2>Schakelingen bouwen met <span class="Important">PCB</span></h2>
+        <div class="text">
+          <p>PCB's zijn een goede manier om een schakeling vaarvan je weet dat die werkt op een nette en mooie manier te maken. Het zorgt voor overzicht in een project wanneer je kunt zeggen dat deze pcb dat regelt.</p>
+        </div>
+      </div>
+    </section> 
+
+    <section id="inductor">
+      <div class="content">
+        <h2>Inductor</h2>
+        <div class="text">
+          <p>LDR, PTC & NTC</p>
+        </div>
+      </div>
+    </section> 
+  </main>
+
+  <div id="credits" class="content">
+    Deze pagina is geschreven door R. Sandbrink en M. Smith en herzien door Joël
+  </div>
+  
+  <div id="footer-placeholder"></div>
+</body>
+
+</html>

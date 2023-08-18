@@ -1,0 +1,19 @@
+.breadboard, .opHout, .troughHole, .pcb{
+    display: none;
+}
+
+main.breadboardACTIVE .breadboard{
+    display: block;
+}
+
+main.opHoutACTIVE .opHout{
+    display: block;
+}
+
+main.troughHoleACTIVE .troughHole{
+    display: block;
+}
+
+main.pcbACTIVE .pcb{
+    display: block;
+}
