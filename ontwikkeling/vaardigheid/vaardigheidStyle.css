@@ -1,6 +1,7 @@
 #title h1{
     font-size: 3rem;
     line-height: 3rem;
+    font-family: MonospaceBlock;
 }
 
 #title {
@@ -37,6 +38,7 @@ main .text {
 h2{
     font-size: 1.5rem;
     font-weight: 500;
+    font-family: MonospaceBlock;
 }
 
 .rightSide img {
