@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/globalStyle.css">
+  <link rel="stylesheet" href="/ontwikkeling/vaardigheid/vaardigheidStyle.css">
+  <link rel="stylesheet" href="ConditionalHide.css">
+  <link rel="stylesheet" href="/ontwikkeling/vaardigheid/prism.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  
+
+  <title>Technasium</title>
+  <script type="text/javascript" src="/header/headerscript.js"></script>
+  <script type="text/javascript" src="/footer/footerscript.js"></script>
+  <script type="text/javascript" src="ConditionalHide.js"></script>
+  <script defer type="text/javascript" src="/globalScript.js"></script>
+  <script src="/ontwikkeling/vaardigheid/prism.js"></script>
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  
+  <div id="headerBackground"></div>
+
+  <section id="title"> 
+    <div class="content"> 
+     <h1>Basic programeren</h1> 
+     <p class="categorie programeren">&#128187; Programeren</p> 
+     <div class="horizontal-line"></div>
+     <br>
+     <p> 
+        INLEIDING
+     </p>
+     <br>
+     <p> 
+      Het doel van deze vaardigheid is de basis van het programeren te leren. Je leert over variabelen, datatypes, if-statements en loops.
+    </p>
+    </div> 
+  </section> 
+
+  <main id="MAIN" class="PythonACTIVE">
+    <label>
+      <input type="radio" name="methodSelect" value="radioPython" checked="checked"> Python
+    </label>
+    <label>
+      <input type="radio" name="methodSelect" value="radioCpp"> C++
+    </label>
+    <label>
+      <input type="radio" name="methodSelect" value="radioJS"> JavaScript
+    </label>
+
+    
+    <section id="variabelen">
+
+      <div class="content Python">
+        <h2>Variabelen in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Een variabele is een plek in het geheugen waar je een waarde in kan opslaan. Je kan een variabele zien als een doos waar je een waarde in kan stoppen. <br><br> In Python kan je een variabele maken door de naam van de variabele te schrijven en daarna een waarde te geven. Je kan de waarde van een variabele veranderen door de naam van de variabele te schrijven en daarna een nieuwe waarde te geven. 
+          </p>
+
+          <div class="rightSide">
+            <p>Voorbeeldcode</p>
+            <pre>
+              <code class="language-python">
+kosten = 1.0
+print(kosten) #Output: 1.0
+
+kosten = 2.0
+print(kosten) #Output: 2.0</code>
+            </pre>
+          </div>
+
+          <p>
+            Je kunt ook rekenen met variabelen. Je kan bijvoorbeeld een variabele maken die de prijs van een product is. Als je dan een variabele maakt die de hoeveelheid van het product is, kan je de prijs van het product berekenen.
+            <br>Dit doe door de variabele totaal te maken en de prijs te vermenigvuldigen met de hoeveelheid.
+          </p>
+
+          <div class="rightSide">
+            <p>Voorbeeldcode</p>
+            <pre>
+              <code class="language-python">
+prijs = 2.0
+hoeveelheid = 3
+totaal = prijs * hoeveelheid
+print(totaal) #Output: 6.0</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Variabelen in <strong>C++</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Variabelen in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+    </section> 
+
+    <section id="EersteSchakeling">
+      <div class="content">
+        <h2>De eerste schakeling</h2>
+        <div class="text">
+          <p>
+            Elke schakeling heeft tegenwoordig een led. Om aan te geven dat iets aan staat, dat iets gebeurt of gewoon voor de mooi. Een led kan simpel aan of uit worden gezet door een stroomkring te maken. 
+            <br><br>
+            In deze schakeling gaan we een led laten branden. Hiervoor heb je een breadboard, een led, <span class="tooltip">een weerstand<span class="tooltiptext">De weerstand die je moet pakken hangt af van welke batterij je gebruikt.</span></span>, een knop en een batterij nodig.
+          </p>
+
+          <div class="rightSide">
+            <p>Dit heb je nodig</p>
+            <img src="https://static.javatpoint.com/blog/images/breadboard3.png">
+          </div>
+
+          <div class="alert warning">
+            <h3>Let op!</h3>
+            <p>
+              De weerstand die je moet pakken hangt af van welke batterij je gebruikt. <br>
+              5 volt - 150 ohm<br>
+              6 volt - 220 ohm<br>
+              9 volt - 390 ohm<br>
+              12 volt - 560 ohm<br>
+              24 volt - 1,2K ohm
+            </p>
+          </div>
+          <br>
+
+          <p>
+              Power rails aan de zijkanten zijn voor positieve en negatieve voeding, en je kunt componenten zoals weerstanden en LED's in de gaatjes plaatsen. Lange componenten hebben meerdere pinnen die op verschillende rijen kunnen worden aangesloten.<br><br> Jumperdraden met pinnetjes aan beide uiteinden verbinden componenten in verschillende rijen. Dit maakt het mogelijk om schakelingen te bouwen zonder te solderen. <br><br>Breadboards zijn handig voor snelle proefopstellingen en experimenteren, en je kunt componenten herpositioneren of draden verplaatsen als je niet tevreden bent met de schakeling.
+          </p>
+        </div>
+      </div>
+    </section> 
+  </main>
+
+  <div id="credits" class="content">
+    Deze pagina is geschreven door R. Sandbrink en M. Smith en herzien door Joël
+  </div>
+  
+  <div id="footer-placeholder"></div>
+</body>
+
+</html>

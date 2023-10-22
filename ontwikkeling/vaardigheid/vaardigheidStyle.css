@@ -113,6 +113,11 @@ section{
     background-color: #ffedc7;
 }
 
+.categorie.programeren{
+    border-color: #bc14ff;
+    background-color: #f8c7ff;
+}
+
 #title #MetaData .Credits{
     margin:0.2rem 0;
     padding: 0 0.3rem;
