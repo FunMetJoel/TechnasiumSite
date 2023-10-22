@@ -34,11 +34,11 @@
      <div class="horizontal-line"></div>
      <br>
      <p> 
-        INLEIDING
+        Programeren is een hanidge vaardigheid om te leren. Je kan er veel mee doen. Je kan bijvoorbeeld een website of app maken, lastige prosessen simuleren of een robot besturen.
      </p>
      <br>
      <p> 
-      Het doel van deze vaardigheid is de basis van het programeren te leren. Je leert over variabelen, datatypes, if-statements en loops.
+      In deze vaaridgheid leer je de basis van programmeren. Je leert over variabelen, datatypes, if-statements en loops.
     </p>
     </div> 
   </section> 
@@ -61,7 +61,7 @@
         <h2>Variabelen in <strong>Python</strong></h2>
         <div class="text">
           <p>
-            Een variabele is een plek in het geheugen waar je een waarde in kan opslaan. Je kan een variabele zien als een doos waar je een waarde in kan stoppen. <br><br> In Python kan je een variabele maken door de naam van de variabele te schrijven en daarna een waarde te geven. Je kan de waarde van een variabele veranderen door de naam van de variabele te schrijven en daarna een nieuwe waarde te geven.<br><br> Je kan de waarde van een variable de input van een gebruiker maken. Dit doe je door de functie input() te gebruiken. <br>Je kan de waarde van een variabele printen door de functie print() te gebruiken.
+            Een variabele is een plek in het geheugen waar je een waarde in kan opslaan. Je kan een variabele zien als een doos waar je een waarde in kan stoppen. <br><br> In Python kan je een variabele maken door de naam van de variabele te schrijven en daarna een waarde te geven. Je kan de waarde van een variabele veranderen door de naam van de variabele te schrijven en daarna een nieuwe waarde te geven.<br><br> Je kan de waarde van een variable de input van een gebruiker maken. Dit doe je door de functie <strong>input()</strong> te gebruiken. <br>Je kan de waarde van een variabele printen door de functie <strong>print()</strong> te gebruiken.
           </p>
 
           <div class="rightSide">
@@ -112,7 +112,67 @@ print(totaal) #Output: 6.0</code>
       <div class="content Cpp">
         <h2>Variabelen in <strong>C++</strong></h2>
         <div class="text">
+          <p>
+            Een variabele is een plek in het geheugen waar je een waarde in kan opslaan. Je kan een variabele zien als een doos waar je een waarde in kan stoppen. <br><br> In C++ kan je een variabele maken door de naam van de variabele te schrijven en daarna een waarde te geven. Je kan de waarde van een variabele veranderen door de naam van de variabele te schrijven en daarna een nieuwe waarde te geven.<br><br> Je kan de waarde van een variable de input van een gebruiker maken. Dit doe je door <strong>std::cin >> [variabele]</strong> te gebruiken. <br>Je kan de waarde van een variabele printen door <strong>std::cout &lt;&lt; "tekst"</strong> te gebruiken. Meestal doe je er een <strong>&lt;&lt; std::endl</strong> achter om een nieuwe regel te maken.
+          </p>
+
+          <div class="rightSide">
+            <p>Variabelen maken en veranderen</p>
+            <pre>
+              <code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+  float kosten = 1.0;
+  std::cout &lt;&lt; kosten &lt;&lt; std::endl;
+  //Output: 1.0
+
+  kosten = 2.0;
+  std::cout &lt;&lt; kosten &lt;&lt; std::endl;
+  //Output: 2.0
+
+  int aantal;
+  std::cout &lt;&lt; "Aantal: ";
+  std::cin >> aantal;
+  std::cout &lt;&lt; aantal;
+  //Output invoer
+}</code>
+            </pre>
+          </div>
+
+          <div>
+            <p>
+              Je kunt ook rekenen met variabelen. Je kan bijvoorbeeld een variabele maken die de prijs van een product is. Als je dan een variabele maakt die de hoeveelheid van het product is, kan je de prijs van het product berekenen.
+              <br>Dit doe door de variabele totaal te maken en de prijs te vermenigvuldigen met de hoeveelheid.
+            </p>
+            <br>
+            <div class="alert info">
+              <h3>Reken Operatoren</h3>
+              <p>
+                + is plus: &nbsp; 75.0 + 4.0 = 79.0 &nbsp; telt waarden bij elkaar op<br>
+                - is min: &nbsp; 75.0 - 4.0 = 71.0 &nbsp; haalt waarden van elkaar af<br>
+                * is keer: &nbsp; 75.0 * 4.0 = 300.0 &nbsp; vermenigvuldigt waarden met elkaar<br>
+                / is delen: &nbsp; 75.0 / 4.0 = 18.75 &nbsp; deelt waarden door elkaar<br>
+                % is rest: &nbsp; 75.0 % 4.0 = 3.0 &nbsp; berekent de restwaarde na deling
+              </p>
+            </div>
+          </div>
           
+          <div class="rightSide">
+            <p>Rekenen</p>
+            <pre>
+              <code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+  float prijs = 2.0;
+  int hoeveelheid = 3;
+  float totaal = prijs * hoeveelheid;
+  std::cout &lt;&lt; totaal &lt;&lt; std::endl; 
+  // Output: 6.0
+}</code>
+            </pre>
+          </div>
         </div>
       </div>
       <div class="content JS">
@@ -129,12 +189,12 @@ print(totaal) #Output: 6.0</code>
         <h2>Datatypes in <strong>Python</strong></h2>
         <div class="text">
           <p class="custom-wrap">
-            Een datatype is een soort waarde. Er zijn verschillende datatypes. De meest gebruikte datatypes zijn: <br>
-            Een <strong>Integer (int)</strong> is een heel getal. Bijvoorbeeld: 1, 2, 3, 4, 5, 6, 7, 8, 9 en 10<br>
-            Een <strong>Float (float)</strong> is een kommagetal. Bijvoorbeeld: 1.0, 2.3, 3.64 en 4.234<br>
-            Een <strong>String (str)</strong> is een stuk tekst. Bijvoorbeeld: "Hallo", "Dit is een string" en "123"<br>
-            Een <strong>Boolean (bool)</strong> is een Ja of Nee. Bijvoorbeeld: True en False<br>
-            Een <strong>List (list)</strong> is een lijst met waarden. Bijvoorbeeld: [1, 2, 6, 9]<br>
+            Een datatype is het soort waarde. Er zijn verschillende datatypes. De meest gebruikte datatypes zijn: <br>
+            Een <strong>Integer (int)</strong> is een heel getal. <br>&emsp;Bijvoorbeeld: 1, 2, 3, 4, 5, 6, 7, 8, 9 en 10<br>
+            Een <strong>Float (float)</strong> is een kommagetal. <br>&emsp;Bijvoorbeeld: 1.0, 2.3, 3.64 en 4.234<br>
+            Een <strong>String (str)</strong> is een stuk tekst. <br>&emsp;Bijvoorbeeld: "Hallo", "Dit is een string" en "123"<br>
+            Een <strong>Boolean (bool)</strong> is een Ja of Nee. <br>&emsp;Bijvoorbeeld: True en False<br>
+            Een <strong>List (list)</strong> is een lijst met waarden. <br>&emsp;Bijvoorbeeld: [1, 2, 6, 9]<br>
           </p>
 
           <div class="rightSide">
@@ -152,7 +212,7 @@ sterren = [4, 5, 3, 4, 5] #list</code>
           <p>
             Datatypes zijn handig om het verschil aan te geven tussen de tekst "prijs" en de variabele prijs.<br><br>
             Soms moet je de datatype van een variabele veranderen. Bijvoorbeeld als je de waarde van een variabele in een stuk tekst wil noemen. Dan moet het getal een stukje tekst worden.<br><br>
-            Je kan de datatype van een variabele opvragen door de functie type() te gebruiken. Je kan de datatype van een variabele veranderen door de datatype te gebruiken als functie. Je moet dan de variabele tussen de haakjes zetten.
+            Je kan de datatype van een variabele opvragen door de functie <strong>type()</strong> te gebruiken. Je kan de datatype van een variabele veranderen door de datatype te gebruiken als functie. Je moet dan de variabele tussen de haakjes zetten.
           </p>
 
           <div class="rightSide">
@@ -175,9 +235,58 @@ print(type(str(prijs)))
         </div>
       </div>
       <div class="content Cpp">
-        <h2>Variabelen in <strong>C++</strong></h2>
+        <h2>Datatypes in <strong>C++</strong></h2>
         <div class="text">
-          
+          <p class="custom-wrap">
+            Een datatype is het soort waarde. Er zijn verschillende datatypes. De meest gebruikte datatypes zijn: <br>
+            Een <strong>Integer (int)</strong> is een heel getal. <br>&emsp;Bijvoorbeeld: 1, 2, 3, 4, 5, 6, 7, 8, 9 en 10<br>
+            Een <strong>Float (float)</strong> is een kommagetal. <br>&emsp;Bijvoorbeeld: 1.0, 2.3, 3.64 en 4.234<br>
+            Een <strong>String (str)</strong> is een stuk tekst. <br>&emsp;Bijvoorbeeld: "Hallo", "Dit is een string" en "123"<br>
+            Een <strong>Boolean (bool)</strong> is een Ja of Nee. <br>&emsp;Bijvoorbeeld: True en False<br>
+
+            Van elk datatype is er een <strong>Array</strong>. Dit is een lijst met meerdere dezelfde datatypes in 1 variabele. <br>&emsp;Bijvoorbeeld: {1, 2, 6, 9}<br>
+          </p>
+
+          <div class="rightSide">
+            <p>Gebruik datatypes</p>
+            <pre>
+              <code class="language-cpp">
+int aantal = 5;
+double kosten = 2.0;
+std::string productNaam = "Koekje";
+bool uitverkocht = false;
+
+//array van int's met lengte 5
+int sterren[5] = {4, 5, 3, 4, 5}</code>
+            </pre>
+          </div>
+
+          <p>
+            Datatypes zijn handig om het verschil aan te geven tussen de tekst "prijs" en de variabele prijs.<br><br>
+            Soms moet je de datatype van een variabele veranderen. Bijvoorbeeld als je de waarde van een variabele in een stuk tekst wil noemen. Dan moet het getal een stukje tekst worden.<br><br>
+            Je kan de datatype van een variabele opvragen door de functie <strong>typeid(...).name()</strong> te gebruiken. Je kan de datatype van een variabele veranderen door de datatype te gebruiken als functie. Je moet dan de variabele tussen de haakjes zetten.
+          </p>
+
+          <div class="rightSide">
+            <p>Datatype veranderen</p>
+            <pre>
+              <code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+  float prijs = 5.0;
+  std::cout &lt;&lt; typeid(prijs).name() &lt;&lt; std::endl;
+  //Output: f (van float)
+
+  std::string text = "De prijs: €" + std::to_string(prijs);
+  std::cout &lt;&lt; text &lt;&lt; std::endl;
+  //Output: De prijs: €5.000000
+
+  std::cout &lt;&lt; typeid(std::to_string(prijs)).name() &lt;&lt; std::endl;
+  //Output: NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE (van string)
+}</code>
+            </pre>
+          </div>
         </div>
       </div>
       <div class="content JS">
@@ -239,7 +348,7 @@ else:
             <p>Elif-statement</p>
             <pre>
               <code class="language-python">
-aantal = 5
+aantal = input(Aantal: )
 if aantal > 0:
   print("Je hebt er" + str(aantal) + " gekocht!")
 elif aantal == 0:
@@ -252,8 +361,78 @@ else:
         </div>
       </div>
       <div class="content Cpp">
-        <h2>Variabelen in <strong>C++</strong></h2>
+        <h2>If-statements in <strong>C++</strong></h2>
         <div class="text">
+          <p>
+            Een if-statement is een stuk code dat alleen wordt uitgevoerd als een voorwaarde waar is. De voorwaarde is een stuk code dat een Boolean waarde geeft. Als de waarde True is, wordt de code uitgevoerd. Als de waarde False is, wordt de code niet uitgevoerd.<br><br>
+            Je kan een if-statement maken door het woord if te schrijven en daarna een tussen haakjes voorwaarde te zetten. Daarna moet je een {} schrijven en een tab gebruiken om de code te schrijven die wordt uitgevoerd als de voorwaarde waar is. <br> Als je de code wil schrijven die wordt uitgevoerd als de voorwaarde niet waar is, moet je na de if-statement else schrijven. Daarna moet je weer een {} schrijven en een tab gebruiken om de code te schrijven die wordt uitgevoerd als de voorwaarde niet waar is.
+          </p>
+
+          <div class="rightSide">
+            <p>If-statement</p>
+            <pre>
+              <code class="language-python">
+#include  &lt;iostream>
+
+int main() {
+  int aantal;
+  std::cout &lt;&lt; "Aantal: ";
+  std::cin >> aantal;
+
+  if (aantal > 0) {
+      std::cout &lt;&lt; "Je hebt er " &lt;&lt; aantal &lt;&lt; " gekocht!" &lt;&lt; std::endl;
+  } else {
+      std::cout &lt;&lt; "Je moet er minimaal 1 kopen!" &lt;&lt; std::endl;
+  }
+}</code>
+            </pre>
+          </div>
+          
+          <div>
+            <p>
+              Je kan ook een if-statement maken die meerdere uitgangen heeft. Dit doe je door het woord elif te schrijven en daarna een voorwaarde tussen haakjes te zetten. Daarna moet je {} schrijven en een tab gebruiken om de code te schrijven die wordt uitgevoerd als de voorwaarde waar is. <br> Als je de code wil schrijven die wordt uitgevoerd als de voorwaarde niet waar is, kun je ook hierna else schrijven. Daarna moet je weer {} schrijven en een tab gebruiken om de code te schrijven die wordt uitgevoerd als bijde voorwaarden niet waar zijn.
+            </p>
+            <br>
+            <div class="alert info">
+              <h3>Vergelijking en Logische Operatoren</h3>
+              <p>
+                <strong>==</strong> is gelijk aan: True als links gelijk is aan rechts<br>
+                <strong>></strong> is groter dan: True als links meer is dan rechts<br>
+                <strong>>=</strong> is groter of gelijk aan: True als links meer of gelijk is aan rechts<br>
+                <strong>!=</strong> is niet gelijk aan: True als links niet gelijk is aan rechts<br>
+                <br>
+                <strong>&</strong> of <strong>and</strong> is en: True als links en rechts True zijn<br>
+                <strong>|</strong> of <strong>or</strong> is of: True als links of rechts True is<br>
+                <strong>!</strong> of <strong>not</strong> is niet: True als niet True is<br>
+                
+
+              </p>
+            </div>
+          </div>
+          
+
+          <div class="rightSide">
+            <p>Elif-statement</p>
+            <pre>
+              <code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+    int aantal;
+    
+    std::cout &lt;&lt; "Aantal: ";
+    std::cin >> aantal;
+
+    if (aantal > 0) {
+        std::cout &lt;&lt; "Je hebt er " &lt;&lt; aantal &lt;&lt; " gekocht!" &lt;&lt; std::endl;
+    } else if (aantal == 0) {
+        std::cout &lt;&lt; "Je moet er minimaal 1 kopen!" &lt;&lt; std::endl;
+    } else {
+        std::cout &lt;&lt; "Je kan er niet minder dan 0 kopen!" &lt;&lt; std::endl;
+    }
+}</code>
+            </pre>
+          </div>
           
         </div>
       </div>
@@ -312,8 +491,59 @@ print(totaal / len(sterren))
         </div>
       </div>
       <div class="content Cpp">
-        <h2>Variabelen in <strong>C++</strong></h2>
+        <h2>Loops in <strong>C++</strong></h2>
         <div class="text">
+          <p>Loops zijn handig wanneer je hetzelfde stukje code vaker wil herhalen.</p>
+          <br>
+
+          <p>
+            Een van de loops in C++ is de while-loop. Deze loop herhaalt iets tot het statement True is.<br>
+            Dit kan handig zijn wanneer je wilt checken of een gebruiker een geldige waarde heeft ingevoerd. Als de gebruiker een ongeldige waarde heeft ingevoerd, kan je de gebruiker vragen om een nieuwe waarde in te voeren. Dit kan je herhalen tot de gebruiker een geldige waarde heeft ingevoerd.<br>
+            Je start een while-loop door while te schrijven en daarna een voorwaarde tussen haakjes te zetten. Daarna moet je een {} schrijven en een tab gebruiken om de code te schrijven die wordt herhaalt zolang de voorwaarde waar is. 
+          </p>
+          
+          <div class="rightSide">
+            <p>While-loop</p>
+            <pre>
+              <code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+  int aantal;
+  
+  std::cout &lt;&lt; "Aantal: ";
+  std::cin >> aantal;
+
+  if (aantal > 0) {
+      std::cout &lt;&lt; "Je hebt er " &lt;&lt; aantal &lt;&lt; " gekocht!" &lt;&lt; std::endl;
+  } else if (aantal == 0) {
+      std::cout &lt;&lt; "Je moet er minimaal 1 kopen!" &lt;&lt; std::endl;
+  } else {
+      std::cout &lt;&lt; "Je kan er niet minder dan 0 kopen!" &lt;&lt; std::endl;
+  }
+}</code>
+            </pre>
+          </div>
+
+          <p>
+            Een andere loop in Python is de for-loop. Deze loop herhaalt iets voor elke waarde in een lijst.<br>
+            Dit kan handig zijn wanneer je een lijst met waarden hebt en je iets met elke waarde in de lijst wil doen. Bijvoorbeeld als je een lijst met het aantal gegeven sterren hebt en je wil een gemiddelde berekenen.
+          </p>
+
+          <div class="rightSide">
+            <p>For-loop</p>
+            <pre>
+              <code class="language-python">
+sterren = [4, 5, 3, 4, 5]
+totaal = 0
+for ster in sterren:
+  totaal = totaal + ster
+
+#len(lijst) geeft lengte van lijst
+print(totaal / len(sterren))
+#Output: 4.2</code>
+            </pre>
+          </div>
           
         </div>
       </div>
