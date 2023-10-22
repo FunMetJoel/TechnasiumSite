@@ -65,7 +65,7 @@
           </p>
 
           <div class="rightSide">
-            <p>Voorbeeldcode</p>
+            <p>Variabelen maken</p>
             <pre>
               <code class="language-python">
 kosten = 1.0
@@ -76,13 +76,26 @@ print(kosten) #Output: 2.0</code>
             </pre>
           </div>
 
-          <p>
-            Je kunt ook rekenen met variabelen. Je kan bijvoorbeeld een variabele maken die de prijs van een product is. Als je dan een variabele maakt die de hoeveelheid van het product is, kan je de prijs van het product berekenen.
-            <br>Dit doe door de variabele totaal te maken en de prijs te vermenigvuldigen met de hoeveelheid.
-          </p>
-
+          <div>
+            <p>
+              Je kunt ook rekenen met variabelen. Je kan bijvoorbeeld een variabele maken die de prijs van een product is. Als je dan een variabele maakt die de hoeveelheid van het product is, kan je de prijs van het product berekenen.
+              <br>Dit doe door de variabele totaal te maken en de prijs te vermenigvuldigen met de hoeveelheid.
+            </p>
+            <br>
+            <div class="alert info">
+              <h3>Reken Operatoren</h3>
+              <p>
+                + is plus: &nbsp; 75.0 + 4.0 = 79.0 &nbsp; telt waarden bij elkaar op<br>
+                - is min: &nbsp; 75.0 - 4.0 = 71.0 &nbsp; haalt waarden van elkaar af<br>
+                * is keer: &nbsp; 75.0 * 4.0 = 300.0 &nbsp; vermenigvuldigt waarden met elkaar<br>
+                / is delen: &nbsp; 75.0 / 4.0 = 18.75 &nbsp; deelt waarden door elkaar<br>
+                % is rest: &nbsp; 75.0 % 4.0 = 3.0 &nbsp; berekent de restwaarde na deling
+              </p>
+            </div>
+          </div>
+          
           <div class="rightSide">
-            <p>Voorbeeldcode</p>
+            <p>Rekenen</p>
             <pre>
               <code class="language-python">
 prijs = 2.0
@@ -107,44 +120,192 @@ print(totaal) #Output: 6.0</code>
       </div>
     </section> 
 
-    <section id="EersteSchakeling">
-      <div class="content">
-        <h2>De eerste schakeling</h2>
+    <section id="datatypes">
+
+      <div class="content Python">
+        <h2>Datatypes in <strong>Python</strong></h2>
         <div class="text">
-          <p>
-            Elke schakeling heeft tegenwoordig een led. Om aan te geven dat iets aan staat, dat iets gebeurt of gewoon voor de mooi. Een led kan simpel aan of uit worden gezet door een stroomkring te maken. 
-            <br><br>
-            In deze schakeling gaan we een led laten branden. Hiervoor heb je een breadboard, een led, <span class="tooltip">een weerstand<span class="tooltiptext">De weerstand die je moet pakken hangt af van welke batterij je gebruikt.</span></span>, een knop en een batterij nodig.
+          <p class="custom-wrap">
+            Een datatype is een soort waarde. Er zijn verschillende datatypes. De meest gebruikte datatypes zijn: <br>
+            Een <strong>Integer (int)</strong> is een heel getal. Bijvoorbeeld: 1, 2, 3, 4, 5, 6, 7, 8, 9 en 10<br>
+            Een <strong>Float (float)</strong> is een kommagetal. Bijvoorbeeld: 1.0, 2.3, 3.64 en 4.234<br>
+            Een <strong>String (str)</strong> is een stuk tekst. Bijvoorbeeld: "Hallo", "Dit is een string" en "123"<br>
+            Een <strong>Boolean (bool)</strong> is een Ja of Nee. Bijvoorbeeld: True en False<br>
+            Een <strong>List (list)</strong> is een lijst met waarden. Bijvoorbeeld: [1, 2, 6, 9]<br>
           </p>
 
           <div class="rightSide">
-            <p>Dit heb je nodig</p>
-            <img src="https://static.javatpoint.com/blog/images/breadboard3.png">
+            <p>Gebruik datatypes</p>
+            <pre>
+              <code class="language-python">
+aantal = 5 #int
+kosten = 2.0 #float
+productNaam = "Koekje" #str
+uitverkocht = False #bool
+sterren = [4, 5, 3, 4, 5] #list</code>
+            </pre>
           </div>
 
-          <div class="alert warning">
-            <h3>Let op!</h3>
-            <p>
-              De weerstand die je moet pakken hangt af van welke batterij je gebruikt. <br>
-              5 volt - 150 ohm<br>
-              6 volt - 220 ohm<br>
-              9 volt - 390 ohm<br>
-              12 volt - 560 ohm<br>
-              24 volt - 1,2K ohm
-            </p>
+          <p>
+            Datatypes zijn handig om het verschil aan te geven tussen de tekst "prijs" en de variabele prijs.<br><br>
+            Soms moet je de datatype van een variabele veranderen. Bijvoorbeeld als je de waarde van een variabele in een stuk tekst wil noemen. Dan moet het getal een stukje tekst worden.<br><br>
+            Je kan de datatype van een variabele opvragen door de functie type() te gebruiken. Je kan de datatype van een variabele veranderen door de datatype te gebruiken als functie. Je moet dan de variabele tussen de haakjes zetten.
+          </p>
+
+          <div class="rightSide">
+            <p>Datatype veranderen</p>
+            <pre>
+              <code class="language-python">
+prijs = 5.0 #float
+print(type(prijs)) #Output: float
+text = "De prijs: €" + str(prijs)
+
+print(text) 
+#Output: De prijs: €5.0
+
+print(type(str(prijs))) 
+#Output: str</code>
+            </pre>
           </div>
+          
+          
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Variabelen in <strong>C++</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Variabelen in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="if-statements">
+
+      <div class="content Python">
+        <h2>If-statements in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Een if-statement is een stuk code dat alleen wordt uitgevoerd als een voorwaarde waar is. De voorwaarde is een stuk code dat een Boolean waarde geeft. Als de waarde True is, wordt de code uitgevoerd. Als de waarde False is, wordt de code niet uitgevoerd.<br><br>
+            Je kan een if-statement maken door het woord if te schrijven en daarna een voorwaarde te zetten. Daarna moet je een dubbele punt schrijven en een tab gebruiken om de code te schrijven die wordt uitgevoerd als de voorwaarde waar is. <br> Als je de code wil schrijven die wordt uitgevoerd als de voorwaarde niet waar is, moet je na de if-statement else schrijven. Daarna moet je weer een dubbele punt schrijven en een tab gebruiken om de code te schrijven die wordt uitgevoerd als de voorwaarde niet waar is.
+
+            
+          </p>
+
+          <div class="rightSide">
+            <p>If-statement</p>
+            <pre>
+              <code class="language-python">
+aantal = 5
+if aantal > 0:
+  print("Je hebt er" + str(aantal) + " gekocht!")
+else:
+  print("Je moet er minimaal 1 kopen!")</code>
+            </pre>
+          </div>
+
+          <p>
+            Je kan ook een if-statement maken die meerdere uitgangen heeft. Dit doe je door het woord elif te schrijven en daarna een voorwaarde te zetten. Daarna moet je een dubbele punt schrijven en een tab gebruiken om de code te schrijven die wordt uitgevoerd als de voorwaarde waar is. <br> Als je de code wil schrijven die wordt uitgevoerd als de voorwaarde niet waar is, kun je ook hierna else schrijven. Daarna moet je weer een dubbele punt schrijven en een tab gebruiken om de code te schrijven die wordt uitgevoerd als bijde voorwaarden niet waar zijn.
+          </p>
+
+          <div class="rightSide">
+            <p>Elif-statement</p>
+            <pre>
+              <code class="language-python">
+aantal = 5
+if aantal > 0:
+  print("Je hebt er" + str(aantal) + " gekocht!")
+elif aantal == 0:
+  print("Je moet er minimaal 1 kopen!")
+else:
+  print("Je kan er niet minder dan 0 kopen!")</code>
+            </pre>
+          </div>
+          
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Variabelen in <strong>C++</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Variabelen in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="loops">
+
+      <div class="content Python">
+        <h2>Loops in <strong>Python</strong></h2>
+        <div class="text">
+          <p>Loops zijn handig wanneer je hetzelfde stukje code vaker wil herhalen.</p>
           <br>
 
           <p>
-              Power rails aan de zijkanten zijn voor positieve en negatieve voeding, en je kunt componenten zoals weerstanden en LED's in de gaatjes plaatsen. Lange componenten hebben meerdere pinnen die op verschillende rijen kunnen worden aangesloten.<br><br> Jumperdraden met pinnetjes aan beide uiteinden verbinden componenten in verschillende rijen. Dit maakt het mogelijk om schakelingen te bouwen zonder te solderen. <br><br>Breadboards zijn handig voor snelle proefopstellingen en experimenteren, en je kunt componenten herpositioneren of draden verplaatsen als je niet tevreden bent met de schakeling.
+            Een van de loops in Python is de while-loop. Deze loop herhaalt iets tot het statement True is.<br>
+            Dit kan handig zijn wanneer je wilt checken of een gebruiker een geldige waarde heeft ingevoerd. Als de gebruiker een ongeldige waarde heeft ingevoerd, kan je de gebruiker vragen om een nieuwe waarde in te voeren. Dit kan je herhalen tot de gebruiker een geldige waarde heeft ingevoerd.
           </p>
+          
+          <div class="rightSide">
+            <p>While-loop</p>
+            <pre>
+              <code class="language-python">
+aantal = input(Aantal: )
+while aantal &lt;= 0:
+  print("Je moet er minimaal 1 kopen!")
+  aantal = input(Aantal: )</code>
+            </pre>
+          </div>
+
+          <p>
+            Een andere loop in Python is de for-loop. Deze loop herhaalt iets voor elke waarde in een lijst.<br>
+            Dit kan handig zijn wanneer je een lijst met waarden hebt en je iets met elke waarde in de lijst wil doen. Bijvoorbeeld als je een lijst met het aantal gegeven sterren hebt en je wil een gemiddelde berekenen.
+          </p>
+
+          <div class="rightSide">
+            <p>For-loop</p>
+            <pre>
+              <code class="language-python">
+sterren = [4, 5, 3, 4, 5]
+totaal = 0
+for ster in sterren:
+  totaal = totaal + ster
+
+#len(lijst) geeft lengte van lijst
+print(totaal / len(sterren))
+#Output: 4.2</code>
+            </pre>
+          </div>
+          
         </div>
       </div>
-    </section> 
+      <div class="content Cpp">
+        <h2>Variabelen in <strong>C++</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Variabelen in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+    </section>
   </main>
 
   <div id="credits" class="content">
-    Deze pagina is geschreven door R. Sandbrink en M. Smith en herzien door Joël
+    Deze pagina is geschreven door Joël
   </div>
   
   <div id="footer-placeholder"></div>
