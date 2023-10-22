@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="nl">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/globalStyle.css">
+  <link rel="stylesheet" href="/ontwikkeling/vaardigheid/vaardigheidStyle.css">
+  <link rel="stylesheet" href="ConditionalHide.css">
+  <link rel="stylesheet" href="/ontwikkeling/vaardigheid/prism.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  
+
+  <title>Technasium</title>
+  <script type="text/javascript" src="/header/headerscript.js"></script>
+  <script type="text/javascript" src="/footer/footerscript.js"></script>
+  <script type="text/javascript" src="ConditionalHide.js"></script>
+  <script defer type="text/javascript" src="/globalScript.js"></script>
+  <script src="/ontwikkeling/vaardigheid/prism.js"></script>
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  
+  <div id="headerBackground"></div>
+
+  <section id="title"> 
+    <div class="content"> 
+      <h1>Functies</h1> 
+      <p class="categorie programeren">&#128187; Programeren</p> 
+      <div class="horizontal-line"></div>
+      <br>
+      <p> 
+        Functies is de eerste stap naar het geordend schrijven van code. Met functies kun je code hergebruiken en code opdelen in kleinere stukken.
+      </p>
+      <br>
+      <p> 
+        In deze vaardigheid leer je hoe je functies maakt en gebruikt. Ook leer je een paar standaard functies die je kan gebruiken.
+      </p>
+    </div> 
+  </section> 
+
+  <main id="MAIN" class="PythonACTIVE">
+    <label>
+      <input type="radio" name="methodSelect" value="radioPython" checked="checked"> Python
+    </label>
+    <label>
+      <input type="radio" name="methodSelect" value="radioCpp"> C++
+    </label>
+    <label>
+      <input type="radio" name="methodSelect" value="radioJS"> JavaScript
+    </label>
+
+    
+    <section id="Functies-maken">
+
+      <div class="content Python">
+        <h2>Functies in <strong>Python</strong></h2>
+        <div class="text">
+          <div>
+            <p>
+              Een functie is een stuk code dat je kan hergebruiken. Het is handig om een lang stuk code op te delen in meerdere functies, die na elkaar gerunt worden. <br> Je kan een functie maken door het woord def te schrijven en daarna de naam van de functie te schrijven. Daarna moet je een dubbele punt schrijven en een tab gebruiken om de code te schrijven die wordt uitgevoerd als de functie wordt aangeroepen. 
+            </p>
+            <br>
+            <div class="alert info">
+              <h3>Korte functies maken</h3>
+              <p>
+                Het is good-practice om een functie kort te houden en maar 1 taak te laten doen.
+              </p>
+            </div>
+            <br>
+            <p>
+              Als je de functie wil gebruiken, moet je de naam van de functie schrijven en daarna haakjes. 
+            </p>
+          </div>
+
+          <div class="rightSide">
+            <p>Functie maken en gebruiken</p>
+            <pre>
+              <code class="language-python">
+def printOpening():
+  print("Welkom bij de winkel")
+  print("Dit kun je kopen:")
+  spullen = ["Appel","Peer","Banaan"]
+  for product in spullen:
+    print(product)
+  print("Wat wil je kopen?")
+
+printOpening()
+#Output:
+#Welkom bij de winkel
+#Dit kun je kopen:
+#Appel
+#Peer
+#Banaan
+#Wat wil je kopen?</code>
+            </pre>
+          </div>
+
+          <p>
+            Aan functies kun je ook waarden meegeven. Deze waarden worden parameters genoemd. Je kan de parameters gebruiken in de functie. Als je de functie aanroept, moet je de waarden meegeven.<br>
+            Bij het maken van de funcite moet je de parameters tussen de haakjes schrijven. Je kan meerdere parameters maken door ze met een komma te scheiden. Je kunt deze variabelen nu alleen binnen de functie gebruiken<br>
+            Als je de functie aanroept, moet je de waarden tussen de haakjes schrijven.
+          </p>
+          
+          <div class="rightSide">
+            <p>Variabelen meegeven</p>
+            <pre>
+              <code class="language-python">
+def printProduct(naam, prijs, uitverkocht):
+  print("Koop een " + naam)
+  print("Het kost €" + str(prijs))
+  if uitverkocht:
+    print("Product helaas uitverkocht")
+
+printProduct("Appel", 0.65, False)
+#Output:
+#Koop een Appel
+#Het kost €0.65
+
+printProduct("Peer", 0.75, True)
+#Output:
+#Koop een Peer
+#Het kost €0.75
+#Product helaas uitverkocht</code>
+            </pre>
+          </div>
+
+          <p>
+            Je kan ook een waarde teruggeven met een functie. Dit doe je met het woord return. Je kan de waarde die je teruggeeft ook gebruiken in de code die de functie aanroept. <br> Je kan de waarde die de functie teruggeeft bijvoorbeeld opslaan in een variabele.
+          </p>
+
+          <div class="rightSide">
+            <p>Return</p>
+            <pre>
+              <code class="language-python">
+def berekenPrijs(aantal, prijs, actie):
+  totaal = aantal * prijs
+  korting = totaal * actie
+  totaal = totaal - korting
+  return totaal
+
+totaalPrijs = berekenPrijs(4, 0.65, 0.2)
+print(totaalPrijs)
+#Output:
+#2.08
+</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Functies  in <strong>C++</strong></h2>
+        <div class="text">
+
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Functies  in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+    </section> 
+
+    <section id="Standaard functies">
+      <div class="content Python">
+        <h2>Standaard functies in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Er zijn een aantal standaard functies die je kan gebruiken in Python. Deze functies zijn al gemaakt en je hoeft ze alleen maar aan te roepen. Sommige daarvan heb je al eerder gezien:<br>
+            Een voorbeeld van zo'n functie is de <strong>print()</strong> functie. Deze functie print de waarde die je meegeeft in de console. <br>
+            Een andere functie is de <strong>input()</strong> functie. Deze functie vraagt de gebruiker om een waarde in te voeren. Deze waarde wordt dan teruggegeven door de functie. <br>
+            De functie <strong>len()</strong> zit ook standaard in python en geeft de lengte van een string of lijst terug. <br>
+            De functie <strong>range()</strong> maakt een lijst met alle nummers in een range. <br>
+            <br>
+            Er zijn functies die je kunt gebruiken om te rekenen:<br>
+            De functie <strong>abs()</strong> geeft de absolute waarde van een waarde terug. <br>
+            De functie <strong>pow()</strong> geeft de macht van een waarde terug. <br>
+            De functie <strong>sqrt()</strong> geeft de wortel van een waarde terug. <br>
+            De functie <strong>round()</strong> rond een waarde af. <br>
+            <br>
+            Er zijn functies die helpen met het werken met tekst:<br>
+            De functie <strong>split()</strong> splitst een string op een bepaald karakter. <br>
+            De functie <strong>lower()</strong> zet een string om naar kleine letters. <br>
+            De functie <strong>upper()</strong> zet een string om naar hoofdletters. <br>
+            De functie <strong>strip()</strong> verwijdert spaties aan het begin en einde van een string. <br>
+            De functie <strong>replace()</strong> vervangt een karakter in een string. <br>
+            <br>
+            Er zijn functies die helpen met het werken met lijsten:<br>
+            De functie <strong>append()</strong> voegt een waarde toe aan een lijst. <br>
+            De functie <strong>remove()</strong> verwijdert een waarde uit een lijst. <br>
+            De functie <strong>pop()</strong> verwijdert een waarde uit een lijst op een bepaalde index. <br>
+            De functie <strong>sort()</strong> sorteert een lijst. <br>
+            De functie <strong>reverse()</strong> draait de volgorde van een lijst om. <br>
+            
+          </p>
+          <div class="rightSide">
+            <p>Standaard functies</p>
+            <pre>
+              <code class="language-python">
+print(input()) #Output input
+print(len("ABC")) #Output: 3
+print(range(5)) #Output: [0,1,2,3,4]
+
+print(abs(-5)) #Output: 5
+print(pow(2,3)) #Output: 8
+print(sqrt(9)) #Output: 3
+print(round(3.14159, 2)) #Output: 3.14
+
+print("Appel Peer Banaan".split(" ")) 
+  #Output: ["Appel","Peer","Banaan"]
+print("Appel".lower()) #Output: appel
+print("Appel".upper()) #Output: APPEL
+print(" Appel ".strip()) #Output: Appel
+print("Appel".replace("A","E")) #Output: Eppel
+
+print(["Appel","Peer","Banaan"].append("Kiwi")) 
+  #Output: ["Appel","Peer","Banaan","Kiwi"]
+print(["Appel","Peer","Banaan"].remove("Peer")) 
+  #Output: ["Appel","Banaan"]
+print(["Appel","Peer","Banaan"].pop(1)) 
+  #Output: ["Appel","Banaan"]
+print(["Appel","Peer","Banaan"].sort()) 
+  #Output: ["Appel","Banaan","Peer"]
+print(["Appel","Peer","Banaan"].reverse()) 
+  #Output: ["Banaan","Peer","Appel"] </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Standaard functies in <strong>C++</strong></h2>
+        <div class="text">
+
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Standaard functies in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+  </main>
+
+  <div id="credits" class="content">
+    Deze pagina is geschreven door Joël
+  </div>
+  
+  <div id="footer-placeholder"></div>
+</body>
+
+</html>

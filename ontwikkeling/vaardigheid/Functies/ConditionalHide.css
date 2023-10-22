@@ -1,0 +1,19 @@
+.Python, .Cpp, .JS, .pcb{
+    display: none;
+}
+
+main.PythonACTIVE .Python{
+    display: block;
+}
+
+main.CppACTIVE .Cpp{
+    display: block;
+}
+
+main.JSACTIVE .JS{
+    display: block;
+}
+
+main.pcbACTIVE .pcb{
+    display: block;
+}

@@ -401,9 +401,9 @@ int main() {
                 <strong>>=</strong> is groter of gelijk aan: True als links meer of gelijk is aan rechts<br>
                 <strong>!=</strong> is niet gelijk aan: True als links niet gelijk is aan rechts<br>
                 <br>
-                <strong>&</strong> of <strong>and</strong> is en: True als links en rechts True zijn<br>
-                <strong>|</strong> of <strong>or</strong> is of: True als links of rechts True is<br>
-                <strong>!</strong> of <strong>not</strong> is niet: True als niet True is<br>
+                <strong>&&</strong> is en: True als links en rechts True zijn<br>
+                <strong>||</strong> is of: True als links of rechts True is<br>
+                <strong>!</strong> is niet: True als niet True is<br>
                 
 
               </p>
@@ -454,7 +454,8 @@ int main() {
 
           <p>
             Een van de loops in Python is de while-loop. Deze loop herhaalt iets tot het statement True is.<br>
-            Dit kan handig zijn wanneer je wilt checken of een gebruiker een geldige waarde heeft ingevoerd. Als de gebruiker een ongeldige waarde heeft ingevoerd, kan je de gebruiker vragen om een nieuwe waarde in te voeren. Dit kan je herhalen tot de gebruiker een geldige waarde heeft ingevoerd.
+            Dit kan handig zijn wanneer je wilt checken of een gebruiker een geldige waarde heeft ingevoerd. Als de gebruiker een ongeldige waarde heeft ingevoerd, kan je de gebruiker vragen om een nieuwe waarde in te voeren. Dit kan je herhalen tot de gebruiker een geldige waarde heeft ingevoerd.<br>
+            Een While-loop maak je door while te schrijven en daarna een voorwaarde te zetten. Daarna moet je een dubbele punt schrijven en een tab gebruiken om de code te schrijven die wordt herhaalt zolang de voorwaarde waar is.
           </p>
           
           <div class="rightSide">
@@ -499,7 +500,7 @@ print(totaal / len(sterren))
           <p>
             Een van de loops in C++ is de while-loop. Deze loop herhaalt iets tot het statement True is.<br>
             Dit kan handig zijn wanneer je wilt checken of een gebruiker een geldige waarde heeft ingevoerd. Als de gebruiker een ongeldige waarde heeft ingevoerd, kan je de gebruiker vragen om een nieuwe waarde in te voeren. Dit kan je herhalen tot de gebruiker een geldige waarde heeft ingevoerd.<br>
-            Je start een while-loop door while te schrijven en daarna een voorwaarde tussen haakjes te zetten. Daarna moet je een {} schrijven en een tab gebruiken om de code te schrijven die wordt herhaalt zolang de voorwaarde waar is. 
+            Je start een while-loop door do te schrijven en daarna een {} te schrijven en een tab gebruiken om de code te schrijven die wordt herhaalt zolang de voorwaarde waar is. Aan het einde van de loop moet je while schrijven en daarna een voorwaarde tussen haakjes zetten.
           </p>
           
           <div class="rightSide">
@@ -515,33 +516,35 @@ int main() {
   std::cin >> aantal;
 
   if (aantal > 0) {
-      std::cout &lt;&lt; "Je hebt er " &lt;&lt; aantal &lt;&lt; " gekocht!" &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Je hebt er " &lt;&lt; aantal &lt;&lt; " gekocht!" &lt;&lt; std::endl;
   } else if (aantal == 0) {
-      std::cout &lt;&lt; "Je moet er minimaal 1 kopen!" &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Je moet er minimaal 1 kopen!" &lt;&lt; std::endl;
   } else {
-      std::cout &lt;&lt; "Je kan er niet minder dan 0 kopen!" &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Je kan er niet minder dan 0 kopen!" &lt;&lt; std::endl;
   }
 }</code>
             </pre>
           </div>
 
           <p>
-            Een andere loop in Python is de for-loop. Deze loop herhaalt iets voor elke waarde in een lijst.<br>
-            Dit kan handig zijn wanneer je een lijst met waarden hebt en je iets met elke waarde in de lijst wil doen. Bijvoorbeeld als je een lijst met het aantal gegeven sterren hebt en je wil een gemiddelde berekenen.
+            Een andere loop in C++ is de for-loop. Deze loop herhaalt iets n keer. Dit doet de loop door een variabele op of af te laten lopen tot de voorwaarde False is.<br>
+            Dit kan handig zijn wanneer je iets een bepaalt aantal keer wilt herhalen.<br>
+            Je gebruikt een for loop door for te schrijven en dan haakjes te openen. Wat tussen de haakjes staat is de startwaarde, de voorwaarde en de stapgrootte. Daarna moet je een {} schrijven en een tab gebruiken om de code te schrijven die wordt herhaalt zolang de voorwaarde waar is.
           </p>
 
           <div class="rightSide">
             <p>For-loop</p>
             <pre>
-              <code class="language-python">
-sterren = [4, 5, 3, 4, 5]
-totaal = 0
-for ster in sterren:
-  totaal = totaal + ster
+              <code class="language-cpp">
+#include &lt;iostream>
 
-#len(lijst) geeft lengte van lijst
-print(totaal / len(sterren))
-#Output: 4.2</code>
+int main() {
+
+  for (int i = 0; i&lt;10; i++){
+    std::cout &lt;&lt; i &lt;&lt; ", ";
+  }
+  //Output: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+}</code>
             </pre>
           </div>
           
