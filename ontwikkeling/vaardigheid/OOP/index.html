@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="nl">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/globalStyle.css">
+  <link rel="stylesheet" href="/ontwikkeling/vaardigheid/vaardigheidStyle.css">
+  <link rel="stylesheet" href="ConditionalHide.css">
+  <link rel="stylesheet" href="/ontwikkeling/vaardigheid/prism.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  
+
+  <title>Technasium</title>
+  <script type="text/javascript" src="/header/headerscript.js"></script>
+  <script type="text/javascript" src="/footer/footerscript.js"></script>
+  <script type="text/javascript" src="ConditionalHide.js"></script>
+  <script defer type="text/javascript" src="/globalScript.js"></script>
+  <script src="/ontwikkeling/vaardigheid/prism.js"></script>
+
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  
+  <div id="headerBackground"></div>
+
+  <section id="title"> 
+    <div class="content"> 
+      <h1>Object oriented prigramming</h1> 
+      <p class="categorie programeren">&#128187; Programeren</p> 
+      <div class="horizontal-line"></div>
+      <br>
+      <p> 
+        Object oriented programming is een manier van programmeren waarbij je code opdeelt in objecten. Deze objecten hebben eigenschappen en methodes. <br>
+        Het is handig om object oriented programming te gebruiken als je een groot project maakt waarin je werkt met veel verschillende dezelfde soort objecten.
+      </p>
+      <br>
+      <p> 
+        In deze vaardigheid leer je hoe je classes maakt en hoe je objecten maakt van deze classes. Ook leer je hoe je objecten kan gebruiken en hoe je objecten kan aanpassen. <br>
+      </p>
+    </div> 
+  </section> 
+
+  <main id="MAIN" class="PythonACTIVE">
+    <label>
+      <input type="radio" name="methodSelect" value="radioPython" checked="checked"> Python
+    </label>
+    <label>
+      <input type="radio" name="methodSelect" value="radioCpp"> C++
+    </label>
+    <label>
+      <input type="radio" name="methodSelect" value="radioJS"> JavaScript
+    </label>
+
+    
+    <section id="Classes-maken">
+
+      <div class="content Python">
+        <h2>Classes in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Een class is een blauwdruk voor een object. In een class staan de eigenschappen en methodes van een object. <br>
+            Je maakt een class door het woord class te schrijven, daarna de naam van de class en te eindigen met een dubbele-punt. <br>
+            In een class kan je een functie maken die de eigenschappen van een object bepaalt. Deze functie heet de <strong>constructor</strong>. <br>
+            Een constructor kun je maken door het woord def te schrijven en daarna __init__ met haakjes erachter. <br>
+            In de constructor kan je de eigenschappen van een object maken. Dit doe je door het woord self te schrijven, daarna een punt en daarna de naam van de eigenschap. <br>
+            Je kunt de eigenschap van het object nu als een variabele gebruiken in de class. <br>
+          </p>
+          <div class="rightSide">
+            <p>Class maken</p>
+            <pre>
+              <code class="language-python">
+class Persoon:
+  def __init__(self):
+    self.naam = "Joël"
+
+persoon1 = Persoon()
+print(persoon1.naam)
+#Output:
+#Joël</code>
+            </pre>
+          </div>
+          
+          <div>
+            <p>
+              Je kan aan de constructor ook waarden meegeven. Deze waarden kan je gebruiken om de eigenschappen van het object te bepalen. <br>
+              Je kan de waarden meegeven door ze tussen de haakjes te schrijven. <br>
+            </p>
+            <br>
+            <div class="alert info">
+              <h3>Functie en object varabelen</h3>
+              <p>
+                Er is verschil tussen functie variabelen en object variabelen. <br>
+                De functie variabele word alleen in de functie gebruikt. <br>
+                In dit voorbeeld is de functie variabele de variabele <strong>naam</strong>. <br>
+                De object variabele word gebruikt in de hele class.<br>
+                In dit voorbeeld is de object variabele de variabele <strong>self.naam</strong>. <br>
+
+              </p>
+            </div>
+          </div>
+          <div class="rightSide">
+            <p>Eigenschappen meegeven</p>
+            <pre>
+              <code class="language-python">
+class Product:
+  def __init__(self, naam, prijs):
+    self.naam = naam
+    self.prijs = prijs
+
+product1 = Product("Appel", 0.65)
+print(product1.naam)
+print(product1.prijs)
+#Output:
+#Appel
+#0.65
+</code>
+            </pre>
+          </div>
+          <p>
+            Wanneer je een object print, krijg je de locatie van het object te zien. Dit is niet handig als je wilt weten waar het object over gaat. <br>
+            Je kan de functie <strong>__str__</strong> maken om te bepalen wat er geprint wordt als je een object print. <br>
+            Je kan de functie __str__ maken door het woord def te schrijven en daarna __str__ met haakjes erachter. <br>
+            In de functie __str__ kan je een string returnen. Deze string wordt geprint als je het object print. <br>
+          </p>
+          <div class="rightSide">
+            <p>__str__ functie</p>
+            <pre>
+              <code class="language-python">
+class Product:
+  def __init__(self, naam, prijs):
+    self.naam = naam
+    self.prijs = prijs
+
+  def __str__(self):
+    return self.naam + ": €" + str(self.prijs)
+
+product1 = Product("Appel", 0.65) 
+print(product1)
+#Output:
+#Appel: €0.65</code>
+            </pre>
+          </div>
+          
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Functies  in <strong>C++</strong></h2>
+        <div class="text">
+
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Functies  in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+    </section> 
+
+    <section id="class_functions">
+      <div class="content Python">
+        <h2>Class functies in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Een class kan ook functies hebben. Deze functies worden <strong>methodes</strong> genoemd. <br>
+            Je kan een methode maken door in de class het woord def te schrijven, daarna de naam van de methode en daarna haakjes. <br>
+            In de methode kan je de eigenschappen van het object gebruiken. Dit doe je door het woord self te schrijven, daarna een punt en daarna de naam van de eigenschap. <br>
+            Je kan de methode gebruiken door het object te selecteren, daarna een punt en daarna de naam van de methode. <br>
+          </p>
+          <div class="rightSide">
+            <p>Methode maken</p>
+            <pre>
+              <code class="language-python">
+class Product:
+  def __init__(self, naam, prijs):
+    self.naam = naam
+    self.prijs = prijs
+
+  def printProductPage(self):
+    print("Dit is de productpagina van " + self.naam)
+    print("De prijs is €" + str(self.prijs))
+
+product1 = Product("Appel", 0.65)
+product1.printProduct()
+#Output:
+#Dit is de productpagina van Appel
+#De prijs is €0.65</code>
+            </pre>
+          </div>
+          <p>
+            Je kan ook een methode maken die een waarde teruggeeft. Dit doe je door het woord return te schrijven en daarna de waarde die je wilt teruggeven. <br>
+            Je kan de waarde die de methode teruggeeft opslaan in een variabele. <br>
+            Ook kun je waarden meegeven aan een methode. Dit doe je door de waarden tussen de haakjes te schrijven. <br>
+            Deze waarde kan je gebruiken in de methode. <br>
+          </p>
+          <div class="rightSide">
+            <p>Methode met return</p>
+            <pre>
+              <code class="language-python">
+class Product:
+  def __init__(self, naam, prijs):
+    self.naam = naam
+    self.prijs = prijs
+
+  def totKosten(self, hoeveelheid):  
+    return self.prijs * hoeveelheid
+
+item1 = Product("Appel", 0.65)
+item2 = Product("Banaan", 0.50)
+tot = item1.totKosten(4) + item2.totKosten(2)
+print(tot)
+#Output:
+#3.6</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Standaard functies in <strong>C++</strong></h2>
+        <div class="text">
+
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Standaard functies in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+    </section>
+    <section id="Class-inheritance">
+      <div class="content Python">
+        <h2>Class Inheritance in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Je kan een class maken die de eigenschappen en methodes van een andere class overneemt. <br>
+            Dit doe je door de naam van de class te schrijven, daarna haakjes en daarna de naam van de class die je wilt overnemen. <br>
+            Je kan de eigenschappen en methodes van de class die je overneemt gebruiken in de nieuwe class. <br>
+            Je kan ook nieuwe eigenschappen en methodes maken in de nieuwe class. <br>
+            <br>
+            In dit voorbeeld hebben we een class <strong>Product</strong> gemaakt. Deze class heeft de eigenschappen <strong>naam</strong> en <strong>prijs</strong>. <br>
+            Ook heeft deze class de methode <strong>printProduct</strong>. <br>
+            <br>
+            Daarna hebben we een class <strong>Voedsel</strong> gemaakt. Deze class neemt de eigenschappen en methodes van de class <strong>Product</strong> over. <br>
+            Ook heeft deze class de eigenschap <strong>houdbaarheid</strong> en de methode <strong>printProduct</strong>. <br>
+            <br>
+            De methode <strong>printProduct</strong> van de class <strong>Voedsel</strong> print eerst de methode <strong>printProduct</strong> van de class <strong>Product</strong>. <br>
+            Daarna print deze methode de eigenschap <strong>houdbaarheid</strong>. <br>
+            <br>
+            De <strong>super()</strong> functie wordt gebruikt om de eigenschappen en methodes van de class die je overneemt te gebruiken. <br>
+          </p>
+
+          <div class="rightSide">
+            <p>Class overnemen</p>
+            <pre>
+              <code class="language-python">
+class Product:
+  def __init__(self, naam, prijs):
+    self.naam = naam
+    self.prijs = prijs
+
+  def printProduct(self):
+    print("Dit is de productpagina van " + self.naam)
+    print("De prijs is €" + str(self.prijs))
+
+class Voedsel(Product):
+  def __init__(self, naam, prijs, houdbaarheid):
+    super().__init__(self, naam, prijs)
+    self.houdbaarheid = houdbaarheid
+
+  def printProduct(self):
+    super().printProduct()
+    print("De houdbaarheid is " + str(self.houdbaarheid) + " dagen")
+
+product1 = Voedsel("Appel", 0.65, 7)
+product1.printProduct()
+#Output:
+#Dit is de productpagina van Appel
+#De prijs is €0.65
+#De houdbaarheid is 7 dagen</code>
+          </pre>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Functies gebruiken in <strong>C++</strong></h2>
+        <div class="text">
+
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Functies gebruiken in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+    </section>
+    <section id="libraries">
+      <div class="content Python">
+        <h2>Libraries in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Er zijn ook stukjes code die anderen al hebben geschreven en die je kan gebruiken in je eigen code. Deze stukjes code worden libraries genoemd. <br>
+            Een library is een verzameling van functies die je kan gebruiken in je code. Je kan een library importeren door het woord import te schrijven en daarna de naam van de library. <br>
+            Je kan ook een specifieke functie importeren door het woord from te schrijven, daarna de naam van de library en daarna het woord import en de naam van de functie. <br>
+            Je kan ook een alias geven aan een library of functie door het woord as te schrijven, dan as daarna de naam van de alias. <br>
+            <br>
+            In dit voorneeld hebben we de library <strong>datetime</strong> geimporteerd. Deze library wordt gebruikt om te werken met datums en tijden. <br>
+          </p>
+          <div class="rightSide">
+            <p>Libraries gebruiken</p>
+            <pre>
+              <code class="language-python">
+import datetime as dt
+
+datum = dt.datetime.now()
+print(datum)
+#Output:
+#huidige datum en tijd bijv:
+#2023-10-23 14:24:00.000000</code>
+            </pre>
+          </div>
+
+          <p>
+            De datetime library brengt een paar nieuwe datatypes met zich mee. <br>
+            De <strong>date</strong> datatype wordt gebruikt om een datum op te slaan. <br>
+            De <strong>time</strong> datatype wordt gebruikt om een tijd op te slaan. <br>
+            De <strong>datetime</strong> datatype wordt gebruikt om een datum en tijd op te slaan. <br>
+            <br>
+            Je kan een datum maken door het woord date te schrijven en daarna de datum tussen haakjes te schrijven. <br>
+            Je kan dates ook vergelijken met elkaar. Je kan bijvoorbeeld kijken of een datum voor of na een andere datum is. <br>
+          </p>
+          <div class="rightSide">
+            <p>Datums vergelijken</p>
+            <pre>
+              <code class="language-python">
+import datetime as dt
+
+datum1 = dt.date(2023, 10, 23)
+datum2 = dt.date(2023, 10, 24)
+print(datum2 > datum1)
+#Output:
+#True</code>
+            </pre>
+          </div>
+          <p>
+            Ook kn je de tijd tussen 2 datums berekenen. Dit kunje doen om een aftelklok te maken voor hoeveel dagen het nog duurt tot een actie is afgeloen bijvoorbeeld. <br>
+          </p>
+          <div class="rightSide">
+            <p>Tijd tussen 2 datums berekenen</p>
+            <pre>
+              <code class="language-python">
+import datetime as dt
+
+datum1 = dt.date(2023, 10, 23)
+datum2 = dt.date(2023, 10, 24)
+tijdVerschil = datum2 - datum1
+print(tijdVerschil)
+#Output:
+#1 day, 0:00:00</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Libraries in <strong>C++</strong></h2>
+        <div class="text">
+
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Libraries in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <div id="credits" class="content">
+    Deze pagina is geschreven door Joël
+  </div>
+  
+  <div id="footer-placeholder"></div>
+  
+</body>
+
+</html>
