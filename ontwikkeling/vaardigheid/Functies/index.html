@@ -20,6 +20,7 @@
   <script type="text/javascript" src="ConditionalHide.js"></script>
   <script defer type="text/javascript" src="/globalScript.js"></script>
   <script src="/ontwikkeling/vaardigheid/prism.js"></script>
+
 </head>
 
 <body>
@@ -244,6 +245,135 @@ print(["Appel","Peer","Banaan"].reverse())
           
         </div>
       </div>
+    </section>
+    <section id="meerdere bestanden">
+      <div class="content Python">
+        <h2>Meerdere bestanden in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Als je een groot project maakt, kan het handig zijn om je code op te delen in meerdere bestanden. Dit kan je doen door een bestand te maken met functies en deze functies te importeren in een ander bestand. <br>
+            Je kan een bestand importeren door het woord import te schrijven en daarna de naam van het bestand. <br>
+            Je kan ook een specifieke functie importeren door het woord from te schrijven, daarna de naam van het bestand en daarna het woord import en de naam van de functie. <br>
+            Je kan ook een alias geven aan een bestand of functie door het woord as te schrijven en daarna de naam van de alias. <br>
+            <br>
+            In dit voorneeld hebben we een bestand met de naam <strong>functies.py</strong> en een bestand met de naam <strong>main.py</strong>. In het bestand <strong>functies.py</strong> staan de functies die we willen gebruiken in het bestand <strong>main.py</strong>. <br>
+          </p>
+          <div class="rightSide">
+            <p>functies.py</p>
+            <pre>
+              <code class="language-python">
+def berekenPrijs(aantal, prijs):
+  totaal = aantal * prijs
+  return totaal</code>
+            </pre>
+            <p>main.py</p>
+            <pre>
+              <code class="language-python">
+import functies
+
+totaalPrijs = functies.berekenPrijs(4, 0.65)
+print(totaalPrijs)
+#Output:
+#2.6</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Functies gebruiken in <strong>C++</strong></h2>
+        <div class="text">
+
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Functies gebruiken in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+    </section>
+    <section id="libraries">
+      <div class="content Python">
+        <h2>Libraries in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Er zijn ook stukjes code die anderen al hebben geschreven en die je kan gebruiken in je eigen code. Deze stukjes code worden libraries genoemd. <br>
+            Een library is een verzameling van functies die je kan gebruiken in je code. Je kan een library importeren door het woord import te schrijven en daarna de naam van de library. <br>
+            Je kan ook een specifieke functie importeren door het woord from te schrijven, daarna de naam van de library en daarna het woord import en de naam van de functie. <br>
+            Je kan ook een alias geven aan een library of functie door het woord as te schrijven, dan as daarna de naam van de alias. <br>
+            <br>
+            In dit voorneeld hebben we de library <strong>datetime</strong> geimporteerd. Deze library wordt gebruikt om te werken met datums en tijden. <br>
+          </p>
+          <div class="rightSide">
+            <p>Libraries gebruiken</p>
+            <pre>
+              <code class="language-python">
+import datetime as dt
+
+datum = dt.datetime.now()
+print(datum)
+#Output:
+#huidige datum en tijd bijv:
+#2023-10-23 14:24:00.000000</code>
+            </pre>
+          </div>
+
+          <p>
+            De datetime library brengt een paar nieuwe datatypes met zich mee. <br>
+            De <strong>date</strong> datatype wordt gebruikt om een datum op te slaan. <br>
+            De <strong>time</strong> datatype wordt gebruikt om een tijd op te slaan. <br>
+            De <strong>datetime</strong> datatype wordt gebruikt om een datum en tijd op te slaan. <br>
+            <br>
+            Je kan een datum maken door het woord date te schrijven en daarna de datum tussen haakjes te schrijven. <br>
+            Je kan dates ook vergelijken met elkaar. Je kan bijvoorbeeld kijken of een datum voor of na een andere datum is. <br>
+          </p>
+          <div class="rightSide">
+            <p>Datums vergelijken</p>
+            <pre>
+              <code class="language-python">
+import datetime as dt
+
+datum1 = dt.date(2023, 10, 23)
+datum2 = dt.date(2023, 10, 24)
+print(datum2 > datum1)
+#Output:
+#True</code>
+            </pre>
+          </div>
+          <p>
+            Ook kn je de tijd tussen 2 datums berekenen. Dit kunje doen om een aftelklok te maken voor hoeveel dagen het nog duurt tot een actie is afgeloen bijvoorbeeld. <br>
+          </p>
+          <div class="rightSide">
+            <p>Tijd tussen 2 datums berekenen</p>
+            <pre>
+              <code class="language-python">
+import datetime as dt
+
+datum1 = dt.date(2023, 10, 23)
+datum2 = dt.date(2023, 10, 24)
+tijdVerschil = datum2 - datum1
+print(tijdVerschil)
+#Output:
+#1 day, 0:00:00</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Libraries in <strong>C++</strong></h2>
+        <div class="text">
+
+        </div>
+      </div>
+      <div class="content JS">
+        <h2>Libraries in <strong>JavaScript</strong></h2>
+        <div class="text">
+          
+        </div>
+      </div>
+
+    </section>
+
   </main>
 
   <div id="credits" class="content">
@@ -251,6 +381,7 @@ print(["Appel","Peer","Banaan"].reverse())
   </div>
   
   <div id="footer-placeholder"></div>
+  
 </body>
 
 </html>
