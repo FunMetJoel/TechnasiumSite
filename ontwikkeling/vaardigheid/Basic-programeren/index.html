@@ -557,6 +557,95 @@ int main() {
         </div>
       </div>
     </section>
+    <section id="Winkel-script">
+      <div class="content Python">
+        <h2>Winkel script in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Met wat je nu weet, kan je een basic winkel script maken. <br>
+            Bij het maken van een project moet je eerst bedenken wat het script moet doen<br>
+            In dit geval moet het: <br>
+            - De gebruiker welkom heten<br>
+            - De gebruiker het product en de prijs laten zien<br>
+            - De gebruiker vragen hoeveel hij/zij wil kopen<br>
+            - De prijs van een product berekenen<br>
+            Ditalles doen we in het script hieronder<br>
+          </p>
+          <br>
+          <div class="rightSide">
+            <p>
+              Basic Winkelwebsite
+            </p>
+            <pre>
+              <code class="language-python">
+print("Welkom bij de winkel")
+
+productNaam = "Koekje" #str
+kosten = 2.0 #float
+uitverkocht = False #bool
+
+print("Een " + str(productNaam) + " kost €" + str(kosten))
+
+if uitverkocht:
+  print("Dit product is uitverkocht")
+else:
+  print("Dit product is op voorraad")
+
+print("")
+
+print("Hoeveel wil je er kopen?")
+aantal = int(input("Aantal: "))
+while aantal <= 0:
+  print("Je moet er minimaal 1 kopen!")
+  aantal = int(input("Aantal: "))
+print("")
+
+tekst = "Je wilt " + str(aantal) 
+tekst = tekst + " keer een " + str(productNaam)
+tekst += " kopen."
+print(tekst)
+
+totKosten = kosten * aantal
+print("Dit kost €" + str(totKosten))</code>
+            </pre>
+          </div>
+          
+          <div class="rightSide">
+            <p>Terminal</p>
+            <pre>
+              <code class="language-text">
+Welkom bij de winkel
+Een Koekje kost €2.0
+Dit product is op voorraad
+
+Hoeveel wil je er kopen?
+Aantal: -2
+Je moet er minimaal 1 kopen!
+Aantal: -3
+Je moet er minimaal 1 kopen!
+Aantal: 0
+Je moet er minimaal 1 kopen!
+Aantal: 5
+
+Je wilt 5 keer een Koekje kopen.
+Dit kost €10.0</code>
+            </pre>
+
+            <p>
+              Test het script op:<br>
+              <a href="https://replit.com/@FunMetJoel/Basic-Winkel" target="_blank" rel="noopener noreferrer">replit.com/@FunMetJoel/Basic-Winkel</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Winkel script in <strong>C++</strong></h2>
+      </div>
+      <div class="content JS">
+        <h2>Winkel script in <strong>JavaScript</strong></h2>
+      </div>
+    </section>
   </main>
 
   <div id="credits" class="content">

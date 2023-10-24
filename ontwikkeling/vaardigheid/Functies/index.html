@@ -48,12 +48,12 @@
     <label>
       <input type="radio" name="methodSelect" value="radioPython" checked="checked"> Python
     </label>
-    <label>
+    <!-- <label>
       <input type="radio" name="methodSelect" value="radioCpp"> C++
     </label>
     <label>
       <input type="radio" name="methodSelect" value="radioJS"> JavaScript
-    </label>
+    </label> -->
 
     
     <section id="Functies-maken">
@@ -370,6 +370,138 @@ print(tijdVerschil)
         </div>
       </div>
 
+    </section>
+
+    <section id="Winkel-script">
+      <div class="content Python">
+        <h2>Winkel script in <strong>Python</strong></h2>
+        <div class="text">
+          <p>
+            Met wat je nu weet, kan je een uitgebreider winkel script maken met functies. <br>
+            Bij het maken van een project moet je eerst bedenken wat het script moet doen.<br>
+            In dit geval moet het: <br>
+            - De gebruiker welkom heten<br>
+            - De gebruiker laten kiezen wat ze willen kopen<br>
+            - De gebruiker vragen hoeveel hij/zij wil kopen<br>
+            - De prijs van een product berekenen<br>
+            - De totaal prijs berekenen en laten zien<br>
+            Ditalles doen we in het script hieronder<br>
+          </p>
+          <br>
+          <div class="rightSide">
+            <p>
+              winkel.py
+            </p>
+            <pre>
+              <code class="language-python">
+def printOpening(spullen):
+  print("Welkom bij de winkel")
+  print("Dit kun je kopen:")
+  for product in spullen:
+    print(" - " + str(product))
+
+def vraagWatTeKopen(spullen):
+  print("Wat wil je kopen?")
+  keuze = input()
+  while (keuze.lower() not in spullen):
+    print("Dat product bestaat niet.")
+    keuze = input()
+  return keuze
+
+def vraagHoeveel(product, prijs):
+  print(f"Een {product} kost €{prijs}")
+  print(f"Hoeveel keer {product} wil je kopen?")
+  hoeveelheid = input("Aantal: ")
+  return int(hoeveelheid)
+
+def berekenKosten(prijzen, hoeveelheden):
+  kosten = 0
+  for i in range(len(prijzen)):
+    kosten += prijzen[i] * hoeveelheden[i]
+  return kosten
+
+def printTotaal(kosten, producten, hoeveelheden):
+  for i in range(len(producten)):
+    product = producten[i]
+    hoeveelheid = hoeveelheden[i]
+    print(f"Je hebt {hoeveelheid} keer {product} gekocht.")
+  print(f"Dat kost in totaal {kosten} euro.")</code>
+            </pre>
+
+            <p>
+              main.py
+            </p>
+            <pre>
+              <code class="language-python">
+import winkel as wkl
+
+producten = ["appel", "peer", "kiwi"]
+prijzen = [0.54, 0.49, 0.64]
+hoeveelheden = [0, 0, 0]
+
+wkl.printOpening(producten)
+
+wilKopen = True
+index = 0
+while wilKopen:
+  keuze = wkl.vraagWatTeKopen(producten)
+  index = producten.index(keuze)
+  hoeveelheid = wkl.vraagHoeveel(keuze, prijzen[index])
+  hoeveelheden[index] += hoeveelheid
+
+  print("Wil je nog meer kopen? (ja/nee)")
+  if input().lower() == "nee":
+    wilKopen = False
+
+kosten = wkl.berekenKosten(prijzen, hoeveelheden)
+wkl.printTotaal(kosten, producten, hoeveelheden)</code>
+            </pre>
+
+          </div>
+          
+          <div class="rightSide">
+            <p>Terminal</p>
+            <pre>
+              <code class="language-text">
+Welkom bij de winkel
+Dit kun je kopen:
+ - appel
+ - peer
+ - kiwi
+Wat wil je kopen?
+appel
+Een appel kost €0.54
+Hoeveel keer appel wil je kopen?
+Aantal: 3
+Wil je nog meer kopen? (ja/nee)
+ja
+Wat wil je kopen?
+kiwi
+Een kiwi kost €0.64
+Hoeveel keer kiwi wil je kopen?
+Aantal: 5 
+Wil je nog meer kopen? (ja/nee)
+nee
+Je hebt 3 keer appel gekocht.
+Je hebt 0 keer peer gekocht.
+Je hebt 5 keer kiwi gekocht.
+Dat kost in totaal 4.82 euro.</code>
+            </pre>
+
+            <p>
+              Test het script op:<br>
+              <a href="https://replit.com/@FunMetJoel/Functies-Winkel" target="_blank" rel="noopener noreferrer">replit.com/@FunMetJoel/Functies-Winkel</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="content Cpp">
+        <h2>Winkel script in <strong>C++</strong></h2>
+      </div>
+      <div class="content JS">
+        <h2>Winkel script in <strong>JavaScript</strong></h2>
+      </div>
     </section>
 
   </main>
