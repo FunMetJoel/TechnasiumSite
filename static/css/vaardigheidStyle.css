@@ -1,7 +1,7 @@
 #title h1{
     font-size: min(3rem, 8vw);
     line-height: 3rem;
-    font-family: MonospaceBlock;
+    font-family: 'Rubik Mono One', monospace;;
 }
 
 #title {
@@ -38,7 +38,7 @@ main .text {
 h2{
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: MonospaceBlock;
+    font-family: 'Rubik Mono One', monospace;;
 }
 
 .rightSide img {
@@ -77,10 +77,10 @@ strong{
     font-weight: bold;
 }
 
-#VaardigheidPagina section{
+/* #VaardigheidPagina section{
     margin-top:1rem;
     margin-bottom: 1rem;
-}
+} */
 
 .horizontal-line {
     border-bottom: 2px solid var(--ichthusBlauw);

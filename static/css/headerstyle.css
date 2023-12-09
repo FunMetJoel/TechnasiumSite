@@ -63,7 +63,7 @@ header.scrolled {
 }
 
 .scrolled a {
-    color: #006b85;
+    color: var(--ichthusBlauw);
 }
 
 .headernav a:hover{

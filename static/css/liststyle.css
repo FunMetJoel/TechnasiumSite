@@ -1,0 +1,46 @@
+.sectionDivider-top .shape-fill, .sectionDivider-bottom .shape-fill{
+    fill: white;
+}
+
+#FrontImage {
+    padding: 25vh 0;
+    background-image: url("https://www.jutter.nl/wp-content/uploads/2020/01/Ichthus-technasium-1-Artis-opdracht-1.jpg");
+}
+
+#vaardigheden {
+    background-color: white;
+}
+
+#vaardigheden h3{
+    padding: 1rem, 0;
+}
+
+.categorie-list {
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+
+.gallery a img{
+    aspect-ratio: 1/1;
+    border-style: inset;
+    border-color: rgb(220, 220, 220);
+}
+
+.gallery a {
+    font-weight:bold;
+    display: inline-block;
+    color: var(--ichthusZwart);
+    text-align: center;
+    margin-top:0;
+    text-decoration: none;
+    background-color: rgb(240, 240, 240);
+}
+
+.categorie-list .gallery a:not([href]) {
+    background-color: gray;
+}
+
+.categorie-list .gallery a:not([href]) img{
+    background-color: lightgray;
+    border-color: rgb(108, 108, 108);
+}

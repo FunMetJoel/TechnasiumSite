@@ -23,8 +23,6 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-
 /* Global styles */
 body {
   font-family: 'Roboto Slab', serif;
@@ -72,7 +70,7 @@ p{
   margin:auto;
 }
 
-.fadeOnScroll{
+/* .fadeOnScroll{
   opacity: 0;
   filter: blur(5px);
   transition: opacity 0.5s ease-in-out;
@@ -83,7 +81,7 @@ p{
 .fadeOnScroll.show{
   opacity: 1;
   filter: blur(0);
-}
+} */
 
 
 /* --------------- */

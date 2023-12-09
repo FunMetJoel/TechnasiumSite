@@ -8,7 +8,7 @@
       <div id="MetaData">
         <p class="categorie {{lower .Params.categorie}}">{{.Params.categorie}}</p> 
         {{ $dateHuman := .Date | time.Format ":date_long" }}        
-        <p class="Credits">Geschreven door Joël</p>
+        <p class="Credits">Geschreven door {{.Params.credits}}</p>
         
       </div>
       <p class="Credits">{{ $dateHuman }} | <a href="{{.Params.editPage}}" >Stel  bewerking voor</a> </p>
@@ -24,7 +24,9 @@
       </p>
     </div> 
   </section>
-  {{ .Content }}
+  <section class="content">
+    {{ .Content }}
+  </section>
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   {{/*  <section id="slicen"> 
     <div class="content"> 

@@ -13,10 +13,43 @@
       </svg>
     </div>
   </section>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+  <section class="content">
+    {{ .Content }}
+
+    {{ $categories := slice }}
+
+    {{ range .Pages }}
+        {{ with .Params.categorie }}
+            {{ if not (in $categories .) }}
+                {{ $categories = $categories | append . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{ $allPages := slice }}
+    {{ range .Pages }}
+        {{ $allPages = $allPages | append . }}
+    {{ end }}
+    {{ range $categories }}
+      <div class="categorie-list">
+
+        <h2>{{ . }}</h2>
+        {{$categorie := .}}
+        
+        <div class="gallery">
+          {{ range $allPages }}
+            {{ if eq .Params.categorie $categorie }}
+            <a href="{{ .Permalink }}">
+              <img src="{{ .Params.picture }}">
+              <h5>{{ .Title }}</h5>
+            </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    
+  </section>
 </main>
 {{ end }}
