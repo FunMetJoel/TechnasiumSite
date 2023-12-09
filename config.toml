@@ -1,0 +1,28 @@
+baseURL = 'https://example.org/'
+languageCode = 'nl-nl'
+title = 'Technasium'
+
+[author]
+    name = ['Joël Rodenbach', 'Docenten']
+
+[params]
+    title = 'Technasium'
+    description = 'Technasium'
+    keywords = 'Technasium'
+    custom_css = ["css/main.css", "css/headerstyle.css", "css/footerstyle.css"]
+    custom_js = []
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
