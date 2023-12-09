@@ -23,9 +23,11 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 /* Global styles */
 body {
-  font-family: 'Roboto Slab', serif;;
+  font-family: 'Roboto Slab', serif;
   background-color: #f8f8f8;
   color: var(--ichthusZwart);
   line-height: 1.6;
@@ -212,12 +214,6 @@ p{
   background-color: #e1faff;
   border: 2px solid #2ab1ff;
 }
-
-@font-face {
-  font-family: MonospaceBlock;
-  src: url(RubikMonoOne-Regular.ttf);
-}
-
 
 /* HEADER */
 header {
