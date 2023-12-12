@@ -2,10 +2,9 @@
 title = 'Basic Componenten'
 date = 2023-12-09T20:20:34+01:00
 slug = "Basic-componenten"
-draft = true
+draft = false
 credits = "Joël"
-editPage = "HTEST"
 categorie = "Electronica"
-picture = "https://ds055uzetaobb.cloudfront.net/brioche/chapter/3D_geometry-VqjRuB.png"
+picture = "https://ds055uzetaobb.cloudfront.net/brioche/chapter/electricity_and_magnetism-rJijqR.png?width=204"
 +++
 Werkt
