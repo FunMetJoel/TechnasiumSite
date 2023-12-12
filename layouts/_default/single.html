@@ -11,7 +11,8 @@
         <p class="Credits">Geschreven door {{.Params.credits}}</p>
         
       </div>
-      <p class="Credits">{{ $dateHuman }} | <a href="{{.Params.editPage}}" >Stel  bewerking voor</a> </p>
+      {{ $filePath := path.Join .Site.Params.GitHubLink (path.Clean .File.Path) }}
+      <p class="Credits">{{ $dateHuman }} | <a href="{{ $filePath }}" >Stel  bewerking voor</a> </p>
       
       <div class="horizontal-line"></div>
       <br>

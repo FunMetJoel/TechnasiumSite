@@ -5,7 +5,7 @@ slug = "Basic-componenten"
 draft = true
 credits = "Joël"
 editPage = "HTEST"
-categorie = "OTHER"
+categorie = "Electronica"
 picture = "https://ds055uzetaobb.cloudfront.net/brioche/chapter/3D_geometry-VqjRuB.png"
 +++
 Werkt

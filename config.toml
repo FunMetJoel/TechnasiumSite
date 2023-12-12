@@ -10,6 +10,9 @@ title = 'Technasium'
     keywords = 'Technasium'
     custom_css = ["css/main.css", "css/headerstyle.css", "css/footerstyle.css", "css/home.css", "css/vaardigheidStyle.css", "css/liststyle.css"]
     custom_js = ["js/header.js", "js/custom.js"]
+    GitHubLink = 'https://github.com/FunMetJoel/TechnasiumSite/tree/hugo/content'
+
+
 
 [[menus.main]]
 name = 'Home'
