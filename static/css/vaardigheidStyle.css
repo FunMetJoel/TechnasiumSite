@@ -135,5 +135,7 @@ input[type="radio"] {
     color: var(--ichthusBlauw);
 }
 
-
+#VaardigheidPagina .content p{
+    margin-bottom: 1rem;
+}
 
