@@ -41,6 +41,10 @@ h2{
     font-family: 'Rubik Mono One', monospace;;
 }
 
+h2,h3{
+    margin-top: 1rem;
+}
+
 .rightSide img {
     max-width: 75%;
 }
