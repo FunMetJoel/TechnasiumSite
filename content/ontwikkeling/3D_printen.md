@@ -13,7 +13,7 @@ introVaardigheid = 'Deze vaardigheid gaat over het instellen en gebruiken van de
 ## Een model kiezen
 Als je iets wilt printen, moet je eerst weten wat je wilt printen.
 - Maak een model met Blender of CAD
-- Vindt een model op internet
+- Vindt een model op [internet](https://www.thingiverse.com/)
 - Gebruik een benchy als voorbeeld
 
 ## De slicer
