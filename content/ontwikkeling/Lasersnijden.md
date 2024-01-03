@@ -31,3 +31,6 @@ Ik ben nog bezig met alle CSS overzetten maar ik denk dat je nu wel kunt schrijv
 
 ![Foto erbij](/parrot-party.gif)
 
+en een filmpje
+{{< youtube w7Ft2ymGmfc >}}
+
