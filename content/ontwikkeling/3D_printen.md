@@ -54,4 +54,4 @@ De printer gaat nu opwarmen, als deze is opgewarmd begint hij met printen.
 Kom af en toe eens kijken naar de printer, zorg dat hij goed blijft printen, zet anders de print stop
 
 ## TADA! 🎉
-Als alles goed is gegaan, kun je nu een 3D geprint model. Maar, je kunt nog zoveel meer doen! Probeer bijvoorbeeld eens verschillende filamenten en kwaliteiten uit. Of probeer eens de Resin printer te gebruiken
+Als alles goed is gegaan, heb je nu een 3D geprint model. Maar, je kunt nog zoveel meer doen! Probeer bijvoorbeeld eens verschillende filamenten en kwaliteiten uit. Of probeer eens de Resin printer te gebruiken
