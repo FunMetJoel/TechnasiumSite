@@ -1,0 +1,11 @@
+## Een model kiezen
+Als je iets wilt printen, moet je eerst weten wat je wilt printen.
+- Maak een model met Blender of CAD
+- Vindt een model op internet
+- Gebruik een benchy als voorbeeld
+
+## De slicer
+Voordat de 3D printer het model kan uitprinten, moet je het 'vertalen' naar gcode. Hiervoor gebruiken je een slicer.
+In deze uitleg gebruiken we prusaslicer voor de pruca 3D printer, maar er zijn nog veel meer slicers.
+
+
