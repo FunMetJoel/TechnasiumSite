@@ -1,3 +1,15 @@
++++
+title = '3D printen'
+date = 2023-12-09T20:20:34+01:00
+slug = "Basic-componenten"
+draft = false
+credits = "Joël"
+categorie = "3D_productie"
+picture = "https://ds055uzetaobb.cloudfront.net/brioche/chapter/3D_geometry-VqjRuB.png"
+introUse = 'Soms wil je een 3D ontwerp fysieke vast kunnen houden. Een goede manier om een ontwerp in het echt te maken, is 3D printen'
+introVaardigheid = 'Deze vaardigheid gaat over het instellen en gebruiken van de 3D printers.'
++++
+
 ## Een model kiezen
 Als je iets wilt printen, moet je eerst weten wat je wilt printen.
 - Maak een model met Blender of CAD
